@@ -21,6 +21,16 @@ p {
     font-family: 'Roboto', sans-serif;
 }
 
+::-moz-selection { /* Code for Firefox */
+    color: white;
+    background: #00acac;
+}
+
+::selection {
+    color: white;
+    background: #00acac;
+}
+
 .header {
     grid-row: 1;
     grid-column: 1/12;
