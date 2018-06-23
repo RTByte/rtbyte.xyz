@@ -2,7 +2,7 @@ body {
   margin: 0;
   padding: 0;
   height: 200%;
-  background: #FBFBFB;
+  background: #ebebeb;
   display: grid;
   grid-template-columns: repeat(11, 1fr);
   grid-template-rows: 100px auto; }
@@ -19,7 +19,7 @@ p {
 .header {
   grid-row: 1;
   grid-column: 1/12;
-  background: #ffffff;
+  background: #f3f3f3;
   box-shadow: 2px 3px 10px rgba(0, 0, 0, 0.1);
   position: sticky;
   top: 0;
@@ -51,15 +51,22 @@ p {
 .nav-logo-img {
   width: 65px;
   height: 65px;
-  border-radius: 50%; }
+  border-radius: 50%;
+  transition: all .1s; }
+  .nav-logo-img:hover {
+    transform: scale(1.1); }
 
 .nav-link {
   text-decoration: none;
   color: #444;
   justify-content: center;
-  margin: 32px; }
+  margin: 32px;
+  transition: all .1s;
+  border-bottom: 3px solid transparent; }
+  .nav-link:hover {
+    border-bottom: 3px solid #ac0000; }
 
-.nav-button {
+.nav-btn {
   background: #ac0000;
   border: none;
   border-radius: 100px;
@@ -70,17 +77,21 @@ p {
   font-weight: 800;
   font-size: 14px;
   letter-spacing: 0.08em;
-  cursor: pointer; }
+  cursor: pointer;
+  transition: all .1s; }
+  .nav-btn:hover {
+    transform: scale(1.1); }
 
 .content {
   grid-row: 2;
   grid-column: 3/10;
-  background: #ffffff; }
+  background: #f3f3f3; }
 
 .content-area {
   margin: 3em 8em; }
 
 .textarea {
+  border-top: 3px solid #ac0000;
   line-height: 23px;
   font-size: 18px;
   color: #333; }
@@ -90,5 +101,11 @@ p {
   text-decoration: none; }
   .textarea-link:hover {
     text-decoration: underline; }
+
+.tippy-tooltip.light-theme {
+  background-color: transparent; }
+
+.tippy-tooltip.light-theme .tippy-roundarrow {
+  fill: transparent; }
 
 /*# sourceMappingURL=main.css.map */

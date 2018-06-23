@@ -4,20 +4,21 @@
         <link rel="stylesheet" href="src/styles/main.css"/>
         <link href="https://fonts.googleapis.com/css?family=Raleway:700,800|Roboto" rel="stylesheet"> 
         <script defer src="static/fontawesome/js/all.js"></script>
+        <script src="https://unpkg.com/tippy.js@2.5.3/dist/tippy.all.min.js"></script>
     </head>
     <body>
         <header class="header">
             <nav class="header-nav nav-left">
-                <img src="src/img/logo.png" class="nav-logo-img">
+                <a href="index.html"><img src="src/img/logo.png" class="nav-logo-img"></a>
             </nav>
             <nav class="header-nav nav-cent">
                 <a href="documentation/index.html" class="nav-link">DOCUMENTATION</a>
                 <a href="about/index.html" class="nav-link">ABOUT US</a>
-                <a href="https://discord.gg/YMAvX3p" target="_blank" class="nav-link">DISCORD</a>
+                <a href="https://discord.gg/YMAvX3p" target="_blank" class="nav-link" id="discord" title="hey">DISCORD</a>
                 <a href="https://github.com/ChopBot/RTByte/" target="_blank" class="nav-link">GITHUB</a>
             </nav>
             <nav class="header-nav nav-right">
-                <a href="login/index.html"><button class="nav-button">SIGN IN</button></a>
+                <a href="login/index.html"><button class="nav-btn">SIGN IN</button></a>
             </nav>
         </header>
         <div class="content">
@@ -38,8 +39,23 @@
                         Should you choose to use RTByte, you'll be welcomed by our intuitive and easy to use server dashboard, that not only let's you configure every part of what the bot should do on your server, but also provides you and your team with useful server information, statistics and more.
                     </p>
                 </div>
-                <h1></h1>
             </div>
         </div>
+        <iframe id="discordwidget" src="https://discordapp.com/widget?id=450163430373064704&theme=light" width="350" height="500" allowtransparency="true" frameborder="0"></iframe>
+        <script>
+            tippy('#discord', {
+                theme: 'light',
+                delay: 250,
+                arrow: true,
+                arrowType: 'round',
+                duration: 300,
+                animation: 'shift-away',
+                interactive: true,
+                interactiveBorder: 2,
+                html: document.querySelector('#discordwidget'),
+                placement: 'bottom',
+                touchHold: true
+            });
+        </script>
     </body>
 </html>
