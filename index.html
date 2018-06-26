@@ -1,10 +1,39 @@
 <html lang="en">
     <head>
+        <!-- Viewport & rendering -->
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Basic metadata -->
         <title>RTByte</title>
-        <link rel="stylesheet" href="src/styles/main.css"/>
+        <meta name="description" content="RTByte, the Rooster Teeth family Discord bot.">
+        <meta name="author" content="Rasmus Gerdin">
+
+        <link rel="canonical" href="https://rtbyte.xyz/"/>
+
+        <!-- OpenGraph & Twitter Cards -->
+        <meta property="og:type" content="website">
+        <meta property="og:title" content="RTByte">
+        <meta property="og:description" content="RTByte - the RT family Discord bot.">
+        <meta property="og:url" content="https://rtbyte.xyz">
+        <meta property="og:image" content="https://rtbyte.xyz/src/img/logo.png">
+        <meta name="twitter:card" content="summary"/>
+        <meta name="twitter:site" content="@raaaaaasmus"/>
+        <meta name="twitter:creator" content="@raaaaaasmus"/>
+        <meta name="twitter:title" content="RTByte - the RT family Discord bot."/>
+        <meta name="twitter:description" content="RTByte is a fully modular multipurpose Discord bot built on the incredible Klasa framework for Discord.js."/>
+        <meta name="twitter:image" content="https://rtbyte.com/src/img/logo.png"/>
+        <meta name="twitter:image:alt" content="Portrait"/>
+    
+        <link rel="shortcut icon" type="image/x-icon" href="src/img/favicon.ico"/>
+        <meta name="google-site-verification" content="">
+
+        <!-- CSS & JS -->
         <link href="https://fonts.googleapis.com/css?family=Raleway:700,800|Roboto" rel="stylesheet"> 
-        <script defer src="static/fontawesome/js/all.js"></script>
         <script src="https://unpkg.com/tippy.js@2.5.3/dist/tippy.all.min.js"></script>
+        <script defer src="static/fontawesome/js/all.js"></script>
+        <link rel="stylesheet" href="src/styles/main.css"/>
     </head>
     <body>
         <header class="header">
@@ -39,16 +68,45 @@
                         Should you choose to use RTByte, you'll be welcomed by our intuitive and easy to use server dashboard, that not only let's you configure every part of what the bot should do on your server, but also provides you and your team with useful server information, statistics and more.
                     </p>
                 </div>
+                <h1>Features</h1>
+                <div class="textarea">
+                    <ul class="fa-ul">
+                        <li><span class="fa-li"><i class="fas fa-check-circle"></i></span>
+                            <h3>Easy setup</h3>
+                            <p>Fully automated setup. All channels and necessary roles are created and configured, including channel permissions.</p>
+                        </li>
+                        <li><span class="fa-li"><i class="fas fa-check-circle"></i></span>
+                            <h3>Extensive logging</h3>
+                            <p>Fully configurable logs for your server. Choose what you want included in your server log, and where you want the logs posted.</p>
+                        </li>
+                        <li><span class="fa-li"><i class="fas fa-check-circle"></i></span>
+                            <h3>Server moderation</h3>
+                            <p>Efficient moderation actions that properly log reasons to your server's audit logs (if applicable). All moderation commands obey the role hierarchy, so moderators can't act on other moderators or admins and the like.</p>
+                        </li>
+                        <li><span class="fa-li"><i class="fas fa-check-circle"></i></span>
+                            <h3>Word blacklisting</h3>
+                            <p>Server-configurable word blacklists that can optionally scan usernames and nicknames, issue automated warnings as well as delete messages or change nicknames.</p>
+                        </li>
+                        <li><span class="fa-li"><i class="fas fa-check-circle"></i></span>
+                            <h3>Joinable roles</h3>
+                            <p>Allow users to join specified roles on your server. Command can list available roles and how many people have that role.</p>
+                        </li>
+                        <li><span class="fa-li"><i class="fas fa-check-circle"></i></span>
+                            <h3>Fun commands</h3>
+                            <p>Various fun commands such as 8ball, dice, coinflip, etc.</p>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
         <iframe id="discordwidget" src="https://discordapp.com/widget?id=450163430373064704&theme=light" width="350" height="500" allowtransparency="true" frameborder="0"></iframe>
         <script>
             tippy('#discord', {
-                theme: 'light',
+                theme: 'invis',
                 delay: 250,
                 arrow: true,
                 arrowType: 'round',
-                duration: 300,
+                duration: 400,
                 animation: 'shift-away',
                 interactive: true,
                 interactiveBorder: 2,

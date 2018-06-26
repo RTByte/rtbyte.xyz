@@ -3,7 +3,6 @@
 body {
     margin: 0;
     padding: 0;
-    height: 200%;
     background: #ebebeb;
     display: grid;
     grid-template-columns: repeat(11, 1fr);
@@ -15,6 +14,12 @@ h1 {
     font-weight: 700;
     color: #333;
     font-size: 36px;
+}
+
+h3 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    color: #444;
 }
 
 p {
@@ -90,6 +95,10 @@ p {
     }
 }
 
+.nav-active {
+    border-bottom: 3px solid $accent;
+}
+
 .nav-btn {
     background: $accent;
     border: none;
@@ -122,7 +131,10 @@ p {
     border-top: 3px solid $accent;
     line-height: 23px;
     font-size: 18px;
-    color: #333;
+    color: #444;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
 }
 
 .textarea-link {
@@ -133,10 +145,125 @@ p {
     }
 }
 
-.tippy-tooltip.light-theme {
+.textarea-red {
+    color: $accent;
+}
+
+.textarea-table {
+    border-collapse: collapse;
+    table-layout: fixed;
+    width: 97.5%;
+    margin: auto;
+    font-family: 'Roboto', sans-serif;
+    th, td {
+        padding: 8px;
+        border-bottom: 1px solid #ddd;
+    }
+    th {
+        color: $header-text;
+        letter-spacing: 0.08em;
+        font-weight: 700;
+        font-family: 'Raleway', sans-serif;
+    }
+    tr:hover {
+        background-color: #ebebeb;
+    }
+}
+
+.aboutwrapper {
+    justify-content: center;
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    padding: 16px 14px;
+    margin: auto;
+}
+
+.aboutimg {
+    width: 150px;
+}
+
+.abouttl {
+    display: flex;
+    flex-flow: column;
+    justify-items: center;
+    padding: 8px 12px;
+}
+
+.namepos {
+    margin: 8px;
+    h3 {
+        margin: 0;
+        padding: 0;
+    }
+}
+
+.aboutlabel {
+    font-size: 12px;
+    font-family: 'Raleway', sans-serif;
+    color: #555;
+    font-weight: 800;
+    letter-spacing: 0.08em;
+}
+
+.mail {
+    padding: 8px 12px;
+    .fa-envelope {
+        color: #666;
+    }
+}
+
+.social {
+    padding: 8px 12px;
+    display: flex;
+}
+
+.socialicon {
+    font-size: 1.5em;
+    color: #666;
+    transition: all .1s;
+    margin: 0 12px 0 0;
+    &:hover {
+        color: $accent;
+        transform: scale(1.1);
+    }
+}
+
+.possib-div {
+    padding-bottom: 24px;
+}
+
+.img-round {
+    border-radius: 50%;
+}
+
+.no-bpoints {
+    list-style: none;
+    padding: 0;
+}
+
+.no-padding {
+    margin: 0;
+    padding: 0;
+}
+
+.fa-li {
+    color: #00ac56;
+}
+
+.tippy-tooltip.invis-theme {
     background-color: transparent;
 }
 
-.tippy-tooltip.light-theme .tippy-roundarrow {
+.tippy-tooltip.invis-theme .tippy-roundarrow {
     fill: transparent;
+}
+
+.tippy-tooltip.light-theme {
+    background-color: $accent;
+    color: white;
+}
+
+.tippy-tooltip.light-theme .tippy-roundarrow {
+    fill: $accent;
 }

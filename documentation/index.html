@@ -1,0 +1,243 @@
+<html lang="en">
+    <head>
+        <!-- Viewport & rendering -->
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Basic metadata -->
+        <title>RTByte | Documentation</title>
+        <meta name="description" content="RTByte, the Rooster Teeth family Discord bot.">
+        <meta name="author" content="Rasmus Gerdin">
+
+        <link rel="canonical" href="https://rtbyte.xyz/"/>
+
+        <!-- OpenGraph & Twitter Cards -->
+        <meta property="og:type" content="website">
+        <meta property="og:title" content="RTByte">
+        <meta property="og:description" content="RTByte - the RT family Discord bot.">
+        <meta property="og:url" content="https://rtbyte.xyz">
+        <meta property="og:image" content="https://rtbyte.xyz/src/img/logo.png">
+        <meta name="twitter:card" content="summary"/>
+        <meta name="twitter:site" content="@raaaaaasmus"/>
+        <meta name="twitter:creator" content="@raaaaaasmus"/>
+        <meta name="twitter:title" content="RTByte - the RT family Discord bot."/>
+        <meta name="twitter:description" content="RTByte is a fully modular multipurpose Discord bot built on the incredible Klasa framework for Discord.js."/>
+        <meta name="twitter:image" content="https://rtbyte.com/src/img/logo.png"/>
+        <meta name="twitter:image:alt" content="Portrait"/>
+    
+        <link rel="shortcut icon" type="image/x-icon" href="../src/img/favicon.ico"/>
+        <meta name="google-site-verification" content="">
+
+        <!-- CSS & JS -->
+        <link href="https://fonts.googleapis.com/css?family=Raleway:700,800|Roboto" rel="stylesheet"> 
+        <script src="https://unpkg.com/tippy.js@2.5.3/dist/tippy.all.min.js"></script>
+        <script defer src="../static/fontawesome/js/all.js"></script>
+        <link rel="stylesheet" href="../src/styles/main.css"/>
+    </head>
+    <body>
+        <header class="header">
+            <nav class="header-nav nav-left">
+                <a href="../index.html"><img src="../src/img/logo.png" class="nav-logo-img"></a>
+            </nav>
+            <nav class="header-nav nav-cent">
+                <a href="../documentation/index.html" class="nav-link nav-active">DOCUMENTATION</a>
+                <a href="../about/index.html" class="nav-link">ABOUT US</a>
+                <a href="https://discord.gg/YMAvX3p" target="_blank" class="nav-link" id="discord" title="hey">DISCORD</a>
+                <a href="https://github.com/ChopBot/RTByte/" target="_blank" class="nav-link">GITHUB</a>
+            </nav>
+            <nav class="header-nav nav-right">
+                <a href="login/index.html"><button class="nav-btn">SIGN IN</button></a>
+            </nav>
+        </header>
+        <div class="content">
+            <div class="content-area">
+                <h1>General usage</h1>
+                <div class="textarea">
+                    <p>
+                        RTByte commands are always prefaced by a <em>dash (-)</em> on a server with default configuration. If this does not work, please contact the server staff of the Discord server you're trying to execute it on, as they may have changed it manually.
+                        <br/><br/>
+                        Parts of commands with <span class="textarea-red">[ ]</span> around them are optional, whereas parts with <span class="textarea-red">&lt; &gt;</span> are required.</p>
+                    </p>
+                </div>
+                <h1>User commands</h1>
+                <div class="textarea">
+                    <table class="textarea-table">
+                        <tbody>
+                            <tr>
+                                <th>COMMAND</th>
+                                <th>DESCRIPTION</th>
+                                <th>ALIASES</th>
+                            </tr>
+                            <tr>
+                                <td>-userconf <i>&lt;set|show|remove|reset&gt; &lt;key&gt; &lt;value&gt;</i></td>
+                                <td>Define per-user configuration.</td>
+                                <td><i></i></td>
+                            </tr>
+                            <tr>
+                                <td>-help <i>[command]</i></td>
+                                <td>Displays a list of commands, or extended help for a specified command.</td>
+                                <td><i>commands</i></td>
+                            </tr>
+                            <tr>
+                                <td>-info</td>
+                                <td>Provides bot information, such as a list of authors and libraries.</td>
+                                <td><i>details, what</i></td>
+                            </tr>
+                            <tr>
+                                <td>-report <i>&lt;user&gt; &lt;reason&gt;</td>
+                                <td>Reports mentioned user to the mod team, reason required. Screenshots appreciated. Append -s to report silently.</td>
+                                <td><i>r</i></td>
+                            </tr>
+                            <tr>
+                                <td>-roles <i>&lt;list|join|leave|add|remove&gt; [user] [role]</i></td>
+                                <td>A series of commands to allow you to join roles by yourself.</td>
+                                <td><i>roleme, team, squad</i></td>
+                            </tr>
+                            <tr>
+                                <td>-quote <i>&lt;message ID&gt; [channel]</i></td>
+                                <td>Quotes a message by ID. Be sure to mention the channel if the message you want to quote is not the same as the one you're sending the message in.</td>
+                                <td><i></i></td>
+                            </tr>
+                            <tr>
+                                <td>-joindate <i>[user]</i></td>
+                                <td>Displays your account creation date along with the date you joined the current server you're on. Other users can be specified to fetch their account creation and server join dates.</td>
+                                <td><i>me, myself, age</i></td>
+                            </tr>
+                            <tr>
+                                <td>-8ball <i>&lt;question&gt;</i>?</td>
+                                <td>Magic 8-ball, does exactly what the toy does, memes included.</td>
+                                <td><i>mirror, magic, conch</i>
+                            </tr>
+                            <tr>
+                                <td>-choice <i>&lt;choices&gt;, &lt;choices&gt;</i></td>
+                                <td>Makes a decision based off of the choices given, no matter how many you include.</td>
+                                <td ><i>choose, decide</td>
+                            </tr>
+                            <tr>
+                                <td>-coinflip</td>
+                                <td>Flips a coin. 🙂 for heads, 🙃 for tails.</td>
+                                <td><i>coin, flip</i></td>
+                            </tr>
+                            <tr>
+                                <td>-roll <i>[amount of dice] [type of dice]</i></td>
+                                <td>Rolls a die. Optionally specify the amount of dice and their type.</td>
+                                <td><i>dice, d20</i></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <h1>Moderation commands</h1>
+                <div class="textarea">
+                    <table class="textarea-table">
+                        <tbody>
+                            <tr>
+                                <th>COMMAND</th>
+                                <th>DESCRIPTION</th>
+                                <th>ALIASES</th>
+                            </tr>
+                            <tr>
+                                <td>-userinfo <i>[user]</i></td>
+                                <td>Displays user information. Returns your info if no other user is specified.</td>
+                                <td><i></i></td>
+                            </tr>
+                            <tr>
+                                <td>-serverinfo</td>
+                                <td>Displays server information.</td>
+                                <td><i>sinfo, guildinfo</i></td>
+                            </tr>
+                            <tr>
+                                <td>-sendmsg <i>&lt;channel/user&gt; &lt;message&gt;</i></td>
+                                <td>Sends a message to the specified channel or user using RTByte.</td>
+                                <td><i>sendmessage, message, msg</i></td>
+                            </tr>
+                            <tr>
+                                <td>-purge <i>[user] &lt;amount&gt; [all] [s]</i></td>
+                                <td>Removes X amount of messages, optionally sent by Y user. Append the word 'all' to ignore role hierarchy.</td>
+                                <td><i>p</i></td>
+                            </tr>
+                            <tr>
+                                <td>-warn <i>&lt;user&gt; &lt;reason&gt;</i></td>
+                                <td>Sends a formal warning to the mentioned user with the specified reason, and logs it.</td>
+                                <td><i>w</i></td>
+                            </tr>
+                            <tr>
+                                <td>-mute <i>&lt;user&gt; &lt;reason&gt;</i></td>
+                                <td>Mutes a mentioned user and logs the reason.</td>
+                                <td><i>m</i></td>
+                            </tr>
+                            <tr>
+                                <td>-unmute <i>&lt;user&gt;</i></td>
+                                <td>Unmutes mentioned user and logs it.</td>
+                                <td><i>um</i></td>
+                            </tr>
+                            <tr>
+                                <td>-kick <i>&lt;user&gt; &lt;reason&gt;</i></td>
+                                <td>Kicks a mentioned user and logs the reason.</td>
+                                <td><i>k</i></td>
+                            </tr>
+                            <tr>
+                                <td>-softban <i>&lt;user&gt; &lt;reason&gt;</i></td>
+                                <td>Kicks user from server and removes all their messages sent during the past 24 hours.</td>
+                                <td><i>sb</i></td>
+                            </tr>
+                            <tr>
+                                <td>-ban <i>&lt;user&gt; &lt;reason&gt;</i></td>
+                                <td>Bans a mentioned user and logs the reason.</td>
+                                <td><i>b</i></td>
+                            </tr>
+                            <tr>
+                                <td>-vckick <i>&lt;user&gt; &lt;reason&gt;</i></td>
+                                <td>Kicks a mentioned user from voice chat and logs the reason.</td>
+                                <td><i>vk, vck</i></td>
+                            </tr>
+                            <tr>
+                                <td>-vcban <i>&lt;user&gt; &lt;reason&gt;</i></td>
+                                <td>Bans a mentioned user from voice chat and logs the reason.</td>
+                                <td><i>vb, vcb</i></td>
+                            </tr>
+                            <tr>
+                                <td>-vcunban <i>&lt;user&gt;</i></td>
+                                <td>Unbans a mentioned user from voice chat.</td>
+                                <td><i>vub, vcub</i></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <h1>Admin commands</h1>
+                <div class="textarea">
+                    <table class="textarea-table">
+                        <tbody>
+                            <tr>
+                                <th>COMMAND</th>
+                                <th>DESCRIPTION</th>
+                                <th>ALIASES</th>
+                            </tr>
+                            <tr>
+                                <td>-conf <i>&lt;set|show|remove|reset&gt; (key) (value)</i></td>
+                                <td>Define per-server configuration via commmand.</td>
+                                <td><i></i></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <iframe id="discordwidget" src="https://discordapp.com/widget?id=450163430373064704&theme=light" width="350" height="500" allowtransparency="true" frameborder="0"></iframe>
+        <script>
+            tippy('#discord', {
+                theme: 'invis',
+                delay: 250,
+                arrow: true,
+                arrowType: 'round',
+                duration: 400,
+                animation: 'shift-away',
+                interactive: true,
+                interactiveBorder: 2,
+                html: document.querySelector('#discordwidget'),
+                placement: 'bottom',
+                touchHold: true
+            });
+        </script>
+    </body>
+</html>
