@@ -1,7 +1,7 @@
 body {
   margin: 0;
   padding: 0;
-  background: #ebebeb;
+  background: #f3f3f3;
   display: grid;
   grid-template-columns: repeat(11, 1fr);
   grid-template-rows: 100px auto; }
@@ -23,16 +23,16 @@ p {
 ::-moz-selection {
   /* Code for Firefox */
   color: white;
-  background: #00acac; }
+  background: #00acbf; }
 
 ::selection {
   color: white;
-  background: #00acac; }
+  background: #00acbf; }
 
 .header {
   grid-row: 1;
   grid-column: 1/12;
-  background: #f3f3f3;
+  background: #f7f7f7;
   box-shadow: 2px 3px 10px rgba(0, 0, 0, 0.1);
   position: sticky;
   top: 0;
@@ -100,8 +100,7 @@ p {
 
 .content {
   grid-row: 2;
-  grid-column: 3/10;
-  background: #f3f3f3; }
+  grid-column: 3/10; }
 
 .content-area {
   margin: 3em 8em; }
@@ -191,6 +190,15 @@ p {
 
 .possib-div {
   padding-bottom: 24px; }
+
+.footer {
+  grid-row: 3;
+  grid-column: 3/10;
+  background: #f3f0f0;
+  border-top: 1px solid #d8d8d8;
+  display: flex;
+  align-items: center;
+  justify-items: center; }
 
 .img-round {
   border-radius: 50%; }
