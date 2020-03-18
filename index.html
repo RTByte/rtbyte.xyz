@@ -1,125 +1,136 @@
 <html lang="en">
-    <head>
-        <!-- Viewport & rendering -->
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <!-- Basic metadata -->
-        <title>RTByte</title>
-        <meta name="description" content="RTByte, the Rooster Teeth family Discord bot.">
-        <meta name="author" content="Rasmus Gerdin">
+<head>
+    <!-- Viewport & rendering -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <link rel="canonical" href="https://rtbyte.xyz/"/>
+    <!-- Basic metadata -->
+    <title>RTByte</title>
+    <meta name="description"
+        content="An open-source modular multipurpose Discord bot built on the incredible Klasa framework for discord.js.">
+    <meta name="author" content="Rasmus Gerdin">
 
-        <!-- OpenGraph & Twitter Cards -->
-        <meta property="og:type" content="website">
-        <meta property="og:title" content="RTByte">
-        <meta property="og:description" content="RTByte - the RT family Discord bot.">
-        <meta property="og:url" content="https://rtbyte.xyz">
-        <meta property="og:image" content="https://rtbyte.xyz/src/img/logo.png">
-        <meta name="twitter:card" content="summary"/>
-        <meta name="twitter:site" content="@raaaaaasmus"/>
-        <meta name="twitter:creator" content="@raaaaaasmus"/>
-        <meta name="twitter:title" content="RTByte - the RT family Discord bot."/>
-        <meta name="twitter:description" content="RTByte is a fully modular multipurpose Discord bot built on the incredible Klasa framework for Discord.js."/>
-        <meta name="twitter:image" content="https://rtbyte.com/src/img/logo.png"/>
-        <meta name="twitter:image:alt" content="Portrait"/>
-    
-        <link rel="shortcut icon" type="image/x-icon" href="src/img/favicon.ico"/>
-        <meta name="google-site-verification" content="">
+    <link rel="canonical" href="https://rtbyte.xyz/" />
 
-        <!-- CSS & JS -->
-        <link href="https://fonts.googleapis.com/css?family=Raleway:700,800|Roboto" rel="stylesheet"> 
-        <script src="https://unpkg.com/tippy.js@2.5.3/dist/tippy.all.min.js"></script>
-        <script defer src="static/fontawesome/js/all.js"></script>
-        <link rel="stylesheet" href="src/styles/main.css"/>
-    </head>
-    <body>
-        <header class="header">
-            <nav class="header-nav nav-left">
-                <a href="index.html"><img src="src/img/logo.png" class="nav-logo-img"></a>
-            </nav>
-            <nav class="header-nav nav-cent">
-                <a href="documentation/index.html" class="nav-link">DOCUMENTATION</a>
-                <a href="about/index.html" class="nav-link">ABOUT US</a>
-                <a href="https://discord.gg/YMAvX3p" target="_blank" class="nav-link" id="discord" title="hey">DISCORD</a>
-                <a href="https://github.com/ChopBot/RTByte/" target="_blank" class="nav-link">GITHUB</a>
-            </nav>
-            <nav class="header-nav nav-right">
-                <a href="login/index.html"><button class="nav-btn">SIGN IN</button></a>
-            </nav>
-        </header>
-        <div class="content">
-            <div class="content-area">
-                <h1>RTByte</h1>
-                <div class="textarea">
-                    <p>
-                        RTByte is a fully modular multipurpose Discord bot built on the incredible <a href="https://klasa.js.org/" target="_blank" class="textarea-link">Klasa</a> framework for <a href="https://discord.js.org/" target="_blank" class="textarea-link">Discord.js</a>. It brings a ton of features to help you run and manage your server, and is fully integrated into Discord's audit log system, allowing you to see exactly when and why the bot does something.
-                        <br/><br/>
-                        RTByte is a rewrite and repurposing of <a href="https://github.com/ChopBot/chopbot" target="_blank" class="textarea-link">ChopBot</a> -- a Discord bot written for the Rooster Teeth Family of community Discord servers.
-                    </p>
-                </div>
-                <h1>Our goal</h1>
-                <div class="textarea">
-                    <p>
-                        We aim to provide a reliable, trustworthy Discord bot with a good set of moderation tools for your use.
-                        <br/><br/>
-                        Should you choose to use RTByte, you'll be welcomed by our intuitive and easy to use server dashboard, that not only let's you configure every part of what the bot should do on your server, but also provides you and your team with useful server information, statistics and more.
-                    </p>
-                </div>
-                <h1>Features</h1>
-                <div class="textarea">
-                    <ul class="fa-ul">
-                        <li><span class="fa-li"><i class="fas fa-check-circle"></i></span>
-                            <h3>Easy setup</h3>
-                            <p>Fully automated setup. All channels and necessary roles are created and configured, including channel permissions.</p>
-                        </li>
-                        <li><span class="fa-li"><i class="fas fa-check-circle"></i></span>
-                            <h3>Extensive logging</h3>
-                            <p>Fully configurable logs for your server. Choose what you want included in your server log, and where you want the logs posted.</p>
-                        </li>
-                        <li><span class="fa-li"><i class="fas fa-check-circle"></i></span>
-                            <h3>Server moderation</h3>
-                            <p>Efficient moderation actions that properly log reasons to your server's audit logs (if applicable). All moderation commands obey the role hierarchy, so moderators can't act on other moderators or admins and the like.</p>
-                        </li>
-                        <li><span class="fa-li"><i class="fas fa-check-circle"></i></span>
-                            <h3>Word blacklisting</h3>
-                            <p>Server-configurable word blacklists that can optionally scan usernames and nicknames, issue automated warnings as well as delete messages or change nicknames.</p>
-                        </li>
-                        <li><span class="fa-li"><i class="fas fa-check-circle"></i></span>
-                            <h3>Joinable roles</h3>
-                            <p>Allow users to join specified roles on your server. Command can list available roles and how many people have that role.</p>
-                        </li>
-                        <li><span class="fa-li"><i class="fas fa-check-circle"></i></span>
-                            <h3>Fun commands</h3>
-                            <p>Various fun commands such as 8ball, dice, coinflip, etc.</p>
-                        </li>
-                    </ul>
-                </div>
+    <!-- OpenGraph & Twitter Cards -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="RTByte">
+    <meta property="og:description"
+        content="An open-source modular multipurpose Discord bot built on the incredible Klasa framework for discord.js.">
+    <meta property="og:url" content="https://rtbyte.xyz">
+    <meta property="og:image" content="https://rtbyte.xyz/src/img/og-img.jpg">
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@rasmusgerdin_" />
+    <meta name="twitter:creator" content="@rasmusgerdin_" />
+    <meta name="twitter:title" content="RTByte" />
+    <meta name="twitter:description"
+        content="An open-source modular multipurpose Discord bot built on the incredible Klasa framework for discord.js." />
+    <meta name="twitter:image" content="https://rtbyte.com/src/img/og-img.png" />
+    <meta name="twitter:image:alt" content="RTByte logo" />
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#ac0000">
+    <meta name="msapplication-TileColor" content="#ac0000">
+    <meta name="theme-color" content="#ac0000">
+
+    <!-- CSS & JS -->
+    <link href="https://fonts.googleapis.com/css?family=Raleway:700,800|Roboto" rel="stylesheet">
+    <script src="https://unpkg.com/tippy.js@2.5.3/dist/tippy.all.min.js"></script>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.12.1/css/all.css"
+        integrity="sha384-TxKWSXbsweFt0o2WqfkfJRRNVaPdzXJ/YLqgStggBVRREXkwU7OKz+xXtqOU4u8+" crossorigin="anonymous">
+    <link rel="stylesheet" href="/src/styles/main.css" />
+</head>
+
+<body>
+    <header class="header">
+        <nav class="header-nav nav-left">
+            <a href="/"><img src="/src/img/logo.jpg" class="nav-logo-img"></a>
+        </nav>
+        <nav class="header-nav nav-cent">
+            <a href="/documentation" class="nav-link">DOCUMENTATION</a>
+            <a href="/about" class="nav-link">ABOUT US</a>
+            <a href="https://discord.gg/YMAvX3p" target="_blank" class="nav-link" id="discord" title="hey">DISCORD</a>
+            <a href="https://github.com/ChopBot/RTByte/" target="_blank" class="nav-link">GITHUB</a>
+        </nav>
+        <nav class="header-nav nav-right">
+            <a href="#"><button class="nav-btn">SIGN IN</button></a>
+        </nav>
+    </header>
+    <div class="content">
+        <div class="content-area">
+            <h1>RTByte</h1>
+            <div class="textarea">
+                <p>
+                    RTByte is a fully modular multipurpose Discord bot built on the incredible <a
+                        href="https://klasa.js.org/" target="_blank" class="textarea-link">Klasa</a> framework for <a
+                        href="https://discord.js.org/" target="_blank" class="textarea-link">Discord.js</a>. It brings a
+                    ton of features to help you run and manage your server, and is fully integrated into Discord's audit
+                    log system.
+                </p>
+                <p>
+                    We aim to provide the most consistent and easy-to-use Discord mod bot solution available, with our
+                    key focus areas being modularity, performance, consistency, and choice.
+                </p>
+            </div>
+            <h1>Features</h1>
+            <div class="textarea">
+                <ul class="fa-ul">
+                    <li><span class="fa-li"><i class="fas fa-check-circle"></i></span>
+                        <h3>Easy setup</h3>
+                        <p>Fully automated setup. All channels and necessary roles are created and configured, including
+                            channel permissions.</p>
+                    </li>
+                    <li><span class="fa-li"><i class="fas fa-check-circle"></i></span>
+                        <h3>Extensive logging</h3>
+                        <p>Fully configurable logs for your server. Choose what you want included in your server log,
+                            and where you want the logs posted.</p>
+                    </li>
+                    <li><span class="fa-li"><i class="fas fa-check-circle"></i></span>
+                        <h3>Server moderation</h3>
+                        <p>Efficient moderation actions that properly log reasons to your server's audit logs (if
+                            applicable). All moderation commands obey the role hierarchy, so moderators can't act on
+                            other moderators or admins and the like.</p>
+                    </li>
+                    <li><span class="fa-li"><i class="fas fa-check-circle"></i></span>
+                        <h3>Blacklisting</h3>
+                        <p>Server-configurable word blacklists that can optionally scan usernames and nicknames, issue
+                            automated warnings as well as delete messages or change nicknames.</p>
+                    </li>
+                    <li><span class="fa-li"><i class="fas fa-check-circle"></i></span>
+                        <h3>Joinable roles</h3>
+                        <p>Allow users to join specified roles on your server. Command can list available roles and how
+                            many people have that role.</p>
+                    </li>
+                    <li><span class="fa-li"><i class="fas fa-check-circle"></i></span>
+                        <h3>Custom commands</h3>
+                        <p>Create custom commands for your users with full integration into RTByte's logging system.</p>
+                    </li>
+                </ul>
             </div>
         </div>
-        <div class="footer">
-            <div class"footerlist">
-                <h2>PROJECT</h2>
-                <a href=""
-            </div>
-        </div>
-        <iframe id="discordwidget" src="https://discordapp.com/widget?id=450163430373064704&theme=light" width="350" height="500" allowtransparency="true" frameborder="0"></iframe>
-        <script>
-            tippy('#discord', {
-                theme: 'invis',
-                delay: 250,
-                arrow: true,
-                arrowType: 'round',
-                duration: 400,
-                animation: 'shift-away',
-                interactive: true,
-                interactiveBorder: 2,
-                html: document.querySelector('#discordwidget'),
-                placement: 'bottom',
-                touchHold: true
-            });
-        </script>
-    </body>
+    </div>
+    <iframe id="discordwidget" src="https://discordapp.com/widget?id=450163430373064704&theme=light" width="350"
+        height="500" allowtransparency="true" frameborder="0"></iframe>
+    <script>
+        tippy('#discord', {
+            theme: 'invis',
+            delay: 250,
+            arrow: true,
+            arrowType: 'round',
+            duration: 400,
+            animation: 'shift-away',
+            interactive: true,
+            interactiveBorder: 2,
+            html: document.querySelector('#discordwidget'),
+            placement: 'bottom',
+            touchHold: true
+        });
+    </script>
+</body>
+
 </html>

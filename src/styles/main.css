@@ -4,30 +4,36 @@ body {
   background: #f3f3f3;
   display: grid;
   grid-template-columns: repeat(11, 1fr);
-  grid-template-rows: 100px auto; }
+  grid-template-rows: 100px auto;
+}
 
 h1 {
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   font-weight: 700;
   color: #333;
-  font-size: 36px; }
+  font-size: 36px;
+}
 
 h3 {
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   font-weight: 700;
-  color: #444; }
+  color: #444;
+}
 
 p {
-  font-family: 'Roboto', sans-serif; }
+  font-family: "Roboto", sans-serif;
+}
 
 ::-moz-selection {
   /* Code for Firefox */
   color: white;
-  background: #00acbf; }
+  background: #00acbf;
+}
 
 ::selection {
   color: white;
-  background: #00acbf; }
+  background: #00acbf;
+}
 
 .header {
   grid-row: 1;
@@ -39,48 +45,58 @@ p {
   display: flex;
   align-items: center;
   justify-items: space-evenly;
-  border-top: 3px solid #ac0000; }
+  border-top: 3px solid #ac0000;
+}
 
 .header-nav {
   width: 100%;
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   font-weight: 800;
   font-size: 16px;
   text-align: center;
   letter-spacing: 0.08em;
-  margin: 16px; }
+  margin: 16px;
+}
 
 .nav-left {
   margin-left: 6em;
-  flex: 0; }
+  flex: 0;
+}
 
 .nav-cent {
-  flex: 1; }
+  flex: 1;
+}
 
 .nav-right {
   margin-right: 6em;
-  flex: 0; }
+  flex: 0;
+}
 
 .nav-logo-img {
   width: 65px;
   height: 65px;
   border-radius: 50%;
-  transition: all .1s; }
-  .nav-logo-img:hover {
-    transform: scale(1.1); }
+  transition: all 0.1s;
+}
+.nav-logo-img:hover {
+  transform: scale(1.1);
+}
 
 .nav-link {
   text-decoration: none;
   color: #444;
   justify-content: center;
   margin: 32px;
-  transition: all .1s;
-  border-bottom: 3px solid transparent; }
-  .nav-link:hover {
-    border-bottom: 3px solid #ac0000; }
+  transition: all 0.1s;
+  border-bottom: 3px solid transparent;
+}
+.nav-link:hover {
+  border-bottom: 3px solid #ac0000;
+}
 
 .nav-active {
-  border-bottom: 3px solid #ac0000; }
+  border-bottom: 3px solid #ac0000;
+}
 
 .nav-btn {
   background: #ac0000;
@@ -89,21 +105,25 @@ p {
   height: 36px;
   width: 102px;
   color: #ffffff;
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   font-weight: 800;
   font-size: 14px;
   letter-spacing: 0.08em;
   cursor: pointer;
-  transition: all .1s; }
-  .nav-btn:hover {
-    transform: scale(1.1); }
+  transition: all 0.1s;
+}
+.nav-btn:hover {
+  transform: scale(1.1);
+}
 
 .content {
   grid-row: 2;
-  grid-column: 3/10; }
+  grid-column: 3/10;
+}
 
 .content-area {
-  margin: 3em 8em; }
+  margin: 3em 8em;
+}
 
 .textarea {
   border-top: 3px solid #ac0000;
@@ -112,33 +132,42 @@ p {
   color: #444;
   display: flex;
   flex-flow: row wrap;
-  align-items: center; }
+  align-items: center;
+}
 
 .textarea-link {
+  font-family: "Roboto", sans-serif;
   color: #ac0000;
-  text-decoration: none; }
-  .textarea-link:hover {
-    text-decoration: underline; }
+  text-decoration: none;
+}
+.textarea-link:hover {
+  text-decoration: underline;
+}
 
 .textarea-red {
-  color: #ac0000; }
+  color: #ac0000;
+}
 
 .textarea-table {
   border-collapse: collapse;
   table-layout: fixed;
   width: 97.5%;
   margin: auto;
-  font-family: 'Roboto', sans-serif; }
-  .textarea-table th, .textarea-table td {
-    padding: 8px;
-    border-bottom: 1px solid #ddd; }
-  .textarea-table th {
-    color: #444;
-    letter-spacing: 0.08em;
-    font-weight: 700;
-    font-family: 'Raleway', sans-serif; }
-  .textarea-table tr:hover {
-    background-color: #ebebeb; }
+  font-family: "Roboto", sans-serif;
+}
+.textarea-table th, .textarea-table td {
+  padding: 8px;
+  border-bottom: 1px solid #ddd;
+}
+.textarea-table th {
+  color: #444;
+  letter-spacing: 0.08em;
+  font-weight: 700;
+  font-family: "Raleway", sans-serif;
+}
+.textarea-table tr:hover {
+  background-color: #ebebeb;
+}
 
 .aboutwrapper {
   justify-content: center;
@@ -146,50 +175,62 @@ p {
   flex-flow: row;
   align-items: center;
   padding: 16px 14px;
-  margin: auto; }
+  margin: auto;
+}
 
 .aboutimg {
-  width: 150px; }
+  width: 150px;
+}
 
 .abouttl {
   display: flex;
   flex-flow: column;
   justify-items: center;
-  padding: 8px 12px; }
+  padding: 8px 12px;
+}
 
 .namepos {
-  margin: 8px; }
-  .namepos h3 {
-    margin: 0;
-    padding: 0; }
+  margin: 8px;
+}
+.namepos h3 {
+  margin: 0;
+  padding: 0;
+}
 
 .aboutlabel {
   font-size: 12px;
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   color: #555;
   font-weight: 800;
-  letter-spacing: 0.08em; }
+  letter-spacing: 0.08em;
+}
 
 .mail {
-  padding: 8px 12px; }
-  .mail .fa-envelope {
-    color: #666; }
+  padding: 8px 12px;
+}
+.mail .fa-envelope {
+  color: #666;
+}
 
 .social {
   padding: 8px 12px;
-  display: flex; }
+  display: flex;
+}
 
 .socialicon {
   font-size: 1.5em;
   color: #666;
-  transition: all .1s;
-  margin: 0 12px 0 0; }
-  .socialicon:hover {
-    color: #ac0000;
-    transform: scale(1.1); }
+  transition: all 0.1s;
+  margin: 0 12px 0 0;
+}
+.socialicon:hover {
+  color: #ac0000;
+  transform: scale(1.1);
+}
 
 .possib-div {
-  padding-bottom: 24px; }
+  padding-bottom: 24px;
+}
 
 .footer {
   grid-row: 3;
@@ -198,33 +239,42 @@ p {
   border-top: 1px solid #d8d8d8;
   display: flex;
   align-items: center;
-  justify-items: center; }
+  justify-items: center;
+}
 
 .img-round {
-  border-radius: 50%; }
+  border-radius: 50%;
+}
 
 .no-bpoints {
   list-style: none;
-  padding: 0; }
+  padding: 0;
+}
 
 .no-padding {
   margin: 0;
-  padding: 0; }
+  padding: 0;
+}
 
 .fa-li {
-  color: #00ac56; }
+  color: #00ac56;
+}
 
 .tippy-tooltip.invis-theme {
-  background-color: transparent; }
+  background-color: transparent;
+}
 
 .tippy-tooltip.invis-theme .tippy-roundarrow {
-  fill: transparent; }
+  fill: transparent;
+}
 
 .tippy-tooltip.light-theme {
   background-color: #ac0000;
-  color: white; }
+  color: white;
+}
 
 .tippy-tooltip.light-theme .tippy-roundarrow {
-  fill: #ac0000; }
+  fill: #ac0000;
+}
 
 /*# sourceMappingURL=main.css.map */
