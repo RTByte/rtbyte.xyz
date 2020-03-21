@@ -1,0 +1,284 @@
+/* VARIABLES */
+:root {
+    --accent-color: #ac0000;
+    --body-bg-dark: #0f1118;
+    --header-bg-dark: #181a22;
+    --item-bg-dark: #222531;
+    --subitem-bg-dark: #2a2d3b;
+    --text-main: #ffffff;
+    --text-dimmed: #cecece;
+}
+
+/* CSS RESET */
+    /* Box sizing rules */
+    *,
+    *::before,
+    *::after {
+        box-sizing: border-box;
+    }
+
+    /* Remove default padding */
+    ul[class],
+    ol[class] {
+        padding: 0;
+    }
+
+    /* Remove default margin */
+    body,
+    h1,
+    h2,
+    h3,
+    h4,
+    p,
+    ul[class],
+    ol[class],
+    li,
+    figure,
+    figcaption,
+    blockquote,
+    dl,
+    dd {
+        margin: 0;
+    }
+
+    /* Set core body defaults */
+    body {
+        min-height: 100vh;
+        scroll-behavior: smooth;
+        text-rendering: optimizeSpeed;
+        line-height: 1.5;
+    }
+
+    /* Remove list styles on ul, ol elements with a class attribute */
+    ul[class],
+    ol[class] {
+        list-style: none;
+    }
+
+    /* A elements that don't have a class get default styles */
+    a:not([class]) {
+        text-decoration-skip-ink: auto;
+    }
+
+    /* Make images easier to work with */
+    img {
+        max-width: 100%;
+        display: block;
+    }
+
+    /* Natural flow and rhythm in articles by default */
+    article > * + * {
+        margin-top: 1em;
+    }
+
+    /* Inherit fonts for inputs and buttons */
+    input,
+    button,
+    textarea,
+    select {
+        font: inherit;
+    }
+
+    /* Remove all animations and transitions for people that prefer not to see them */
+    @media (prefers-reduced-motion: reduce) {
+    * {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+        }
+    }
+/* CSS RESET END */
+
+/* PAGE SETUP */
+body {
+    color: var(--text-main);
+    display: grid;
+    grid-template-columns: repeat(11, 1fr);
+    grid-template-rows: 100px minmax(calc(100vh - 100px), auto) auto;
+    background-color: var(--body-bg-dark);
+    background-image: url(../img/bg.svg);
+    font-family: 'Roboto', sans,serif;
+}
+
+#home {
+    grid-template-areas:
+        "header header header header header header header header header header header header"
+        "hero   hero   hero   hero   hero   hero   hero   hero   hero   hero   hero   hero  "
+        "footer footer footer footer footer footer footer footer footer footer footer footer";
+}
+
+header {
+    grid-area: header;
+    display: flex;
+    align-items: center;
+    background: linear-gradient(180deg, rgba(10,11,16,1) 0%, rgba(10,11,16,0) 100%);
+}
+
+.hero {
+    grid-area: hero;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer {
+    grid-area: footer;
+}
+
+* {
+    animation-duration: 0.2ms;
+    animation-iteration-count: 1;
+    transition-duration: 0.2ms;
+    scroll-behavior: auto;
+    transition: all .2s;
+}
+
+.buttons {
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+.active-page { border-bottom: 2px solid var(--text-main); }
+.active-page:hover { border-bottom: 2px solid var(--text-dimmed) }
+/* PAGE SETUP END*/
+
+/* HEADER */
+.navbar {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header a,
+header li {
+    color: var(--text-main);
+    font-size: 1.1rem;
+    font-family: 'Sen', sans-serif;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+header i { font-size: .9rem; }
+
+.header-container {
+    display: flex;
+    align-items: center;
+    margin: 1rem;
+}
+
+.header-container-left { justify-content: flex-start; }
+.header-container-right { margin-left: auto; justify-content: flex-end; }
+
+.nav-container {
+    display: flex;
+    align-items: center;
+}
+
+.nav-container li { display: block; }
+.nav-container li:not(.dropdown-item),
+.nav-container li:not(.img-container) {
+    padding: 1rem;
+}
+
+.nav-container li .nav-dropdown {
+    background-color: var(--header-bg-dark);
+    visibility: hidden;
+    opacity: 0;
+    margin-top: 1rem;
+    position: absolute;
+}
+
+.nav-dropdown {
+    border-radius: 5px;
+}
+
+.dropdown-item {
+    width: 100%;
+    padding: 1rem 1.25rem 1rem 1.25rem;
+}
+
+.nav-container li:hover > .nav-dropdown,
+.nav-container li:focus-within > .nav-dropdown,
+.nav-container li .nav-dropdown:hover {
+    visibility: visible;
+    opacity: 1;
+    display: block;
+}
+
+.has-dropdown:hover i {
+    transform: rotate(180deg);
+}
+
+.header-btn {
+    padding: .55rem;
+    border-radius: 5px;
+    background-color: var(--item-bg-dark);
+}
+
+.donate-btn { 
+    background-color: var(--accent-color); 
+    margin-left: 1rem;
+}
+
+.header-img {
+    width: 50px;
+    min-width: 50px;
+}
+
+header li a:hover,
+header li a:focus-within {
+    color: var(--text-dimmed);
+}
+
+.img-container:hover, .img-container:focus-within {
+    filter: brightness(1.2);
+}
+
+.header-btn:hover,
+.header-btn:focus-within {
+    filter: brightness(1.2);
+}
+/* HEADER END */
+
+/* HERO */
+.hero a {
+    text-decoration: none;
+    color: var(--text-main);
+}
+
+.hero-content {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+.hero-img {
+    font-family: 'Sen', sans-serif;
+    width: 50rem;
+    margin: 2rem;
+}
+
+.hero-desc {
+    text-align: center;
+    font-size: 1.75rem;
+}
+
+.hero-btn {
+    font-family: 'Sen', sans-serif;
+    font-size: 1.5rem;
+    padding: .5rem 1rem;
+    margin: 1rem;
+    background-color: var(--item-bg-dark);
+    border-radius: 5px;
+}
+
+.addbot-btn { background-color: var(--accent-color); }
+
+.hero-btn:hover {
+    filter: brightness(1.2);
+}
+/* HERO END */
