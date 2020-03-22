@@ -47,7 +47,7 @@
     <link rel="stylesheet" href="/src/css/main.css" />
 </head>
 
-<body id="commands">
+<body id="main">
     <header>
         <div class="navbar desktop">
             <nav class="header-container header-container-left">
@@ -58,16 +58,17 @@
                     <li class="has-dropdown" aria-haspopup="true"><a href="#">DEVELOPERS <i
                                 class="fas fa-chevron-down"></i></a>
                         <ul class="nav-dropdown" aria-label="submenu">
-                            <li class="dropdown-item"><a href="/github">GITHUB</a></li>
+                            <li class="dropdown-item"><a href="/github" target="_blank">GITHUB</a></li>
                             <li class="dropdown-item"><a href="/libraries">LIBRARIES</a></li>
                         </ul>
                     </li>
                     <li class="has-dropdown" aria-haspopup="true"><a href="#">SUPPORT <i
                                 class="fas fa-chevron-down"></i></a>
                         <ul class="nav-dropdown" aria-label="submenu">
-                            <li class="dropdown-item"><a href="/discord">DISCORD</a></li>
-                            <li class="dropdown-item"><a href="/faq">FAQ</a></li>
-                            <li class="dropdown-item"><a href="https://status.rtbyte.xyz/">STATUS</a></li>
+                            <li class="dropdown-item"><a href="/discord" target="_blank">DISCORD</a></li>
+                            <li class="dropdown-item"><a href="/faq">F.A.Q.</a></li>
+                            <li class="dropdown-item"><a href="https://status.rtbyte.xyz/">STATUS</a>
+                            </li>
                         </ul>
                     </li>
                     <li><a href="/about">ABOUT US</a></li>
@@ -75,16 +76,16 @@
             </nav>
             <nav class="header-container header-container-right">
                 <div class="buttons">
-                    <a class="btn header-btn" href="/invite">ADD RTBYTE</a>
-                    <a class="btn header-btn donate-btn" href="/donate">DONATE</a>
+                    <a class="btn header-btn" href="/invite" target="_blank">ADD RTBYTE</a>
+                    <a class="btn header-btn donate-btn" href="/donate" target="_blank">DONATE</a>
                 </div>
             </nav>
         </div>
     </header>
     <main>
         <div class="page-wrapper">
-            <div class="cmds-selector">
-                <div class="cmds-title">
+            <div class="page-selector">
+                <div class="page-title">
                     <h1>COMMANDS</h1>
                     <p>A list of bot commands</p>
                 </div>
@@ -97,7 +98,7 @@
                     </ul>
                 </aside>
             </div>
-            <div class="cmds-table">
+            <div class="page-content">
                 <div id="user">
                     <div class="cmd-table-header">
                         <div class="cmd-header-line">
@@ -171,6 +172,11 @@
                             <p class="cmd-cmd">ping</p>
                             <p class="cmd-desc">Runs a connection test to Discord.</p>
                             <p class="cmd-usage"><i>-ping</i></p>
+                        </div>
+                        <div class="cmd-line">
+                            <p class="cmd-cmd">prefix</p>
+                            <p class="cmd-desc">Returns the prefix(es) for the current server.</p>
+                            <p class="cmd-usage"><i>-prefix</i></p>
                         </div>
                         <div class="cmd-line">
                             <p class="cmd-cmd">quote</p>
