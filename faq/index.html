@@ -74,6 +74,16 @@
                     <li><a href="/about">ABOUT US</a></li>
                 </ul>
             </nav>
+            <nav class="header-container header-container-middle">
+                <ul class="nav-container">
+                    <li class="img-container"><a href="/"><img class="header-img"
+                                src="/src/img/rtbyte-circle-outline.svg"></a></li>
+                    <li><a href="#" onclick="mobile-menu"><i class="header-menu fad fa-bars"></i></a></li>
+                </ul>
+                <div class="buttons on-right">
+                    <a class="btn header-btn" href="/invite" target="_blank">ADD RTBYTE</a>
+                </div>
+            </nav>
             <nav class="header-container header-container-right">
                 <div class="buttons">
                     <a class="btn header-btn" href="/invite" target="_blank">ADD RTBYTE</a>
@@ -179,7 +189,7 @@
                             <pre><code>-conf show channels</code><br/><code>-conf show logs.events</code></pre>
                             <p class="answer">Setting a value for a configuration key follows the same structure of
                                 viewing the configuration, but is slightly different.</p>
-                            <pre><code>-conf set logs.events.messageDelete <span class="highlighted">true</span></span></code></pre>
+                            <pre><code>-conf set logs.events.messageDelete <span class="highlighted">true</span></code></pre>
                             <p class="answer">In this example, we're first telling the command that we want to
                                 <i>set</i> a configuration instead of showing one. After that, we're defining the
                                 folder(s), then the actual key itself. The key, much like a folder, is accessed by

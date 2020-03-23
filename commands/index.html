@@ -74,6 +74,16 @@
                     <li><a href="/about">ABOUT US</a></li>
                 </ul>
             </nav>
+            <nav class="header-container header-container-middle">
+                <ul class="nav-container">
+                    <li class="img-container"><a href="/"><img class="header-img"
+                                src="/src/img/rtbyte-circle-outline.svg"></a></li>
+                    <li><a href="#" onclick="mobile-menu"><i class="header-menu fad fa-bars"></i></a></li>
+                </ul>
+                <div class="buttons on-right">
+                    <a class="btn header-btn" href="/invite" target="_blank">ADD RTBYTE</a>
+                </div>
+            </nav>
             <nav class="header-container header-container-right">
                 <div class="buttons">
                     <a class="btn header-btn" href="/invite" target="_blank">ADD RTBYTE</a>
@@ -111,103 +121,108 @@
                         <div class="cmd-line">
                             <p class="cmd-cmd">8ball</p>
                             <p class="cmd-desc">Magic 8-ball, does exactly what the toy does, memes included.</p>
-                            <p class="cmd-usage"><i>-8ball &lt;question&gt;</i></p>
+                            <p class="cmd-usage"><code class="code-inline">-8ball &lt;question&gt;</code></p>
                         </div>
                         <div class="cmd-line">
                             <p class="cmd-cmd">call</p>
                             <p class="cmd-desc">Generates a video chat link for use in servers.</p>
-                            <p class="cmd-usage"><i>-call</i></p>
+                            <p class="cmd-usage"><code class="code-inline">-call</code></p>
                         </div>
                         <div class="cmd-line">
                             <p class="cmd-cmd">choice</p>
                             <p class="cmd-desc">Makes a decision based off of the choices given.</p>
-                            <p class="cmd-usage"><i>-choose &lt;option&gt;, &lt;option&gt;...</i></p>
+                            <p class="cmd-usage"><code
+                                    class="code-inline">-choose &lt;option&gt;, &lt;option&gt;...</code></p>
                         </div>
                         <div class="cmd-line">
                             <p class="cmd-cmd">coinflip</p>
                             <p class="cmd-desc">Flips a coin. 🙂 for heads, 🙃 for tails.</p>
-                            <p class="cmd-usage"><i>-coinflip</i></p>
+                            <p class="cmd-usage"><code class="code-inline">-coinflip</code></p>
                         </div>
                         <div class="cmd-line">
                             <p class="cmd-cmd">discordstatus</p>
                             <p class="cmd-desc">Checks Discord's status and lets you know if there are any ongoing
                                 incidents.</p>
-                            <p class="cmd-usage"><i>-discordstatus</i></p>
+                            <p class="cmd-usage"><code class="code-inline">-discordstatus</code></p>
                         </div>
                         <div class="cmd-line">
                             <p class="cmd-cmd">enlarge</p>
                             <p class="cmd-desc">Enlarges a specified emoji. Standard emojis unfortunately do not work.
                             </p>
-                            <p class="cmd-usage"><i>-enlarge &lt;emoji&gt;</i></p>
+                            <p class="cmd-usage"><code class="code-inline">-enlarge &lt;emoji&gt;</code></p>
                         </div>
                         <div class="cmd-line">
                             <p class="cmd-cmd">help</p>
                             <p class="cmd-desc">Displays a list of commands, or extended help for a specified command.
                                 Links
                                 to this page.</p>
-                            <p class="cmd-usage"><i>-help [command]</i></p>
+                            <p class="cmd-usage"><code class="code-inline">-help [command]</code></p>
                         </div>
                         <div class="cmd-line">
                             <p class="cmd-cmd">info</p>
                             <p class="cmd-desc">Provides bot information, such as a list of authors and libraries.</p>
-                            <p class="cmd-usage"><i>-info</i></p>
+                            <p class="cmd-usage"><code class="code-inline">-info</code></p>
                         </div>
                         <div class="cmd-line">
                             <p class="cmd-cmd">invite</p>
                             <p class="cmd-desc">Displays the link to invite RTByte to your server.</p>
-                            <p class="cmd-usage"><i>-invite</i></p>
+                            <p class="cmd-usage"><code class="code-inline">-invite</code></p>
                         </div>
                         <div class="cmd-line">
                             <p class="cmd-cmd">joindate</p>
                             <p class="cmd-desc">Displays your account creation date along with the date you joined the
                                 current server you're on. Other users can be specified to fetch their info.</p>
-                            <p class="cmd-usage"><i>-joindate [user]</i></p>
+                            <p class="cmd-usage"><code class="code-inline">-joindate [user]</code></p>
                         </div>
                         <div class="cmd-line">
                             <p class="cmd-cmd">lyrics</p>
                             <p class="cmd-desc">Fetches lyrics and information from Genius for you.</p>
-                            <p class="cmd-usage"><i>-lyrics &lt;song&gt;</i></p>
+                            <p class="cmd-usage"><code class="code-inline">-lyrics &lt;song&gt;</code></p>
                         </div>
                         <div class="cmd-line">
                             <p class="cmd-cmd">ping</p>
                             <p class="cmd-desc">Runs a connection test to Discord.</p>
-                            <p class="cmd-usage"><i>-ping</i></p>
+                            <p class="cmd-usage"><code class="code-inline">-ping</code></p>
                         </div>
                         <div class="cmd-line">
                             <p class="cmd-cmd">prefix</p>
                             <p class="cmd-desc">Returns the prefix(es) for the current server.</p>
-                            <p class="cmd-usage"><i>-prefix</i></p>
+                            <p class="cmd-usage"><code class="code-inline">-prefix</code></p>
                         </div>
                         <div class="cmd-line">
                             <p class="cmd-cmd">quote</p>
                             <p class="cmd-desc">Quotes a message by ID. Mention the channel if the message you want to
                                 quote
                                 is not the same as the one you're sending the message in.</p>
-                            <p class="cmd-usage"><i>-quote &lt;message ID&gt; [channel]</i></p>
+                            <p class="cmd-usage"><code class="code-inline">-quote &lt;message ID&gt; [channel]</code>
+                            </p>
                         </div>
                         <div class="cmd-line">
                             <p class="cmd-cmd">reminder</p>
                             <p class="cmd-desc">Sets a reminder for you, append <i>-dm</i> to have the reminder sent to
                                 you
                                 via DM.</p>
-                            <p class="cmd-usage"><i>-reminder &lt;when&gt; &lt;message&gt; [-dm]</i></p>
+                            <p class="cmd-usage"><code
+                                    class="code-inline">-reminder &lt;when&gt; &lt;message&gt; [-dm]</code></p>
                         </div>
                         <div class="cmd-line">
                             <p class="cmd-cmd">roles</p>
                             <p class="cmd-desc">A series of commands to allow you to join roles by yourself.</p>
-                            <p class="cmd-usage"><i>-roles &lt;list/join/leave/add/remove&gt; [user] [role]</i></p>
+                            <p class="cmd-usage"><code
+                                    class="code-inline">-roles &lt;list/join/leave/add/remove&gt; [user] [role]</code>
+                            </p>
                         </div>
                         <div class="cmd-line">
                             <p class="cmd-cmd">star</p>
                             <p class="cmd-desc">Fetch a random message from the starboard. Append <i>top</i> to get the
                                 top
                                 starred message instead.</p>
-                            <p class="cmd-usage"><i>-star [top]</i></p>
+                            <p class="cmd-usage"><code class="code-inline">-star [top]</code></p>
                         </div>
                         <div class="cmd-line">
                             <p class="cmd-cmd">weather</p>
                             <p class="cmd-desc">Fetch the current weather for a specified location.</p>
-                            <p class="cmd-usage"><i>-weather &lt;location&gt;</i></p>
+                            <p class="cmd-usage"><code class="code-inline">-weather &lt;location&gt;</code></p>
                         </div>
                     </div>
                 </div>
@@ -224,87 +239,93 @@
                             <p class="cmd-cmd">userinfo</p>
                             <p class="cmd-desc">Get information on a specified user. If no user is specified, it returns
                                 your info.</p>
-                            <p class="cmd-usage"><i>-userinfo [user]</i></p>
+                            <p class="cmd-usage"><code class="code-inline">-userinfo [user]</code></p>
                         </div>
                         <div class="cmd-line">
                             <p class="cmd-cmd">channelinfo</p>
                             <p class="cmd-desc">Get information on a specified channel. If no channel is specified, it
                                 returns your current channel.</p>
-                            <p class="cmd-usage"><i>-channelinfo [channel]</i></p>
+                            <p class="cmd-usage"><code class="code-inline">-channelinfo [channel]</code></p>
                         </div>
                         <div class="cmd-line">
                             <p class="cmd-cmd">roleinfo</p>
                             <p class="cmd-desc">Get information on a specified role. If no role is specified, it returns
                                 your highest role.</p>
-                            <p class="cmd-usage"><i>-roleinfo [role]</i></p>
+                            <p class="cmd-usage"><code class="code-inline">-roleinfo [role]</code></p>
                         </div>
                         <div class="cmd-line">
                             <p class="cmd-cmd">serverinfo</p>
                             <p class="cmd-desc">Displays server information.</p>
-                            <p class="cmd-usage"><i>-serverinfo</i></p>
+                            <p class="cmd-usage"><code class="code-inline">-serverinfo</code></p>
                         </div>
                         <div class="cmd-line">
                             <p class="cmd-cmd">sendmsg</p>
                             <p class="cmd-desc">Sends a message to the specified channel or user using RTByte.</p>
-                            <p class="cmd-usage"><i>-sendmsg &lt;channel or user&gt; &lt;message&gt;</i></p>
+                            <p class="cmd-usage"><code
+                                    class="code-inline">-sendmsg &lt;channel or user&gt; &lt;message&gt;</code></p>
                         </div>
                         <div class="cmd-line">
                             <p class="cmd-cmd">modhistory</p>
                             <p class="cmd-desc">Lists moderation actions taken against a user in the past. Refers to a
                                 specific case if a case ID is provided.</p>
-                            <p class="cmd-usage"><i>-modhistory [user] [case ID]</i></p>
+                            <p class="cmd-usage"><code class="code-inline">-modhistory [user] [case ID]</code></p>
                         </div>
                         <div class="cmd-line">
                             <p class="cmd-cmd">purge</p>
                             <p class="cmd-desc">Removes X amount of messages, optionally sent by Y user. Append
                                 <i>-all</i>
                                 to ignore the role hierarchy.</p>
-                            <p class="cmd-usage"><i>-purge [user] &lt;amount&gt; [-all] [-s]</i></p>
+                            <p class="cmd-usage"><code
+                                    class="code-inline">-purge [user] &lt;amount&gt; [-all] [-s]</code></p>
                         </div>
                         <div class="cmd-line">
                             <p class="cmd-cmd">warn</p>
                             <p class="cmd-desc">Warns a specified user and logs the reason.</p>
-                            <p class="cmd-usage"><i>-warn &lt;user&gt; [reason] [-s]</i></p>
+                            <p class="cmd-usage"><code class="code-inline">-warn &lt;user&gt; [reason] [-s]</code></p>
                         </div>
                         <div class="cmd-line">
                             <p class="cmd-cmd">mute</p>
                             <p class="cmd-desc">Mutes a specified user and logs the reason.</p>
-                            <p class="cmd-usage"><i>-mute &lt;user&gt; [when] [reason] [-s]</i></p>
+                            <p class="cmd-usage"><code
+                                    class="code-inline">-mute &lt;user&gt; [when] [reason] [-s]</code></p>
                         </div>
                         <div class="cmd-line">
                             <p class="cmd-cmd">unmute</p>
                             <p class="cmd-desc">Unmutes a specified user.</p>
-                            <p class="cmd-usage"><i>-unmute &lt;user&gt;</i></p>
+                            <p class="cmd-usage"><code class="code-inline">-unmute &lt;user&gt;</code></p>
                         </div>
                         <div class="cmd-line">
                             <p class="cmd-cmd">kick</p>
                             <p class="cmd-desc">Kicks a specified user and logs the reason.</p>
-                            <p class="cmd-usage"><i>-lyrics &lt;song&gt;</i></p>
+                            <p class="cmd-usage"><code class="code-inline">-lyrics &lt;song&gt;</code></p>
                         </div>
                         <div class="cmd-line">
                             <p class="cmd-cmd">softban</p>
                             <p class="cmd-desc">Softbans a specified user and logs the reason.</p>
-                            <p class="cmd-usage"><i>-softban &lt;user&gt; [reason] [-s]</i></p>
+                            <p class="cmd-usage"><code class="code-inline">-softban &lt;user&gt; [reason] [-s]</code>
+                            </p>
                         </div>
                         <div class="cmd-line">
                             <p class="cmd-cmd">ban</p>
                             <p class="cmd-desc">Bans a specified user and logs the reason.</p>
-                            <p class="cmd-usage"><i>-ban &lt;user&gt; [when] [reason] [-s]</i></p>
+                            <p class="cmd-usage"><code class="code-inline">-ban &lt;user&gt; [when] [reason] [-s]</code>
+                            </p>
                         </div>
                         <div class="cmd-line">
                             <p class="cmd-cmd">vckick</p>
                             <p class="cmd-desc">Kicks a specified user from voice chat and logs the reason.</p>
-                            <p class="cmd-usage"><i>-vckick &lt;user&gt; [reason] [-s]</i></p>
+                            <p class="cmd-usage"><code class="code-inline">-vckick &lt;user&gt; [reason] [-s]</code></p>
                         </div>
                         <div class="cmd-line">
                             <p class="cmd-cmd">vcban</p>
                             <p class="cmd-desc">Bans a specified user from voice chat and logs the reason.</p>
-                            <p class="cmd-usage"><i>-vcban &lt;user&gt; [when] [reason] [-s]</i></p>
+                            <p class="cmd-usage"><code
+                                    class="code-inline">-vcban &lt;user&gt; [when] [reason] [-s]</code></p>
                         </div>
                         <div class="cmd-line">
                             <p class="cmd-cmd">vcunban</p>
                             <p class="cmd-desc">Unbans a specified user from voice chat.</p>
-                            <p class="cmd-usage"><i>-vcunban &lt;user&gt;</i></p>
+                            <p class="cmd-usage"><code class="code-inline">-vcunban &lt;user&gt;</code></p>
                         </div>
                     </div>
                 </div>
@@ -320,22 +341,27 @@
                         <div class="cmd-line">
                             <p class="cmd-cmd">conf</p>
                             <p class="cmd-desc">Define per-server configuration via commmand.</p>
-                            <p class="cmd-usage"><i>-conf &lt;set/show/remove/reset&gt; (key) (value)</i></p>
+                            <p class="cmd-usage"><code
+                                    class="code-inline">-conf &lt;set/show/remove/reset&gt; (key) (value)</code></p>
                         </div>
                         <div class="cmd-line">
                             <p class="cmd-cmd">createcmd</p>
                             <p class="cmd-desc">Creates a custom command for the server.</p>
-                            <p class="cmd-usage"><i>-createcmd &lt;command name&gt; &lt;command response&gt;</i></p>
+                            <p class="cmd-usage"><code
+                                    class="code-inline">-createcmd &lt;command name&gt; &lt;command response&gt;</code>
+                            </p>
                         </div>
                         <div class="cmd-line">
                             <p class="cmd-cmd">deletecmd</p>
                             <p class="cmd-desc">Deletes a custom command from the server.</p>
-                            <p class="cmd-usage"><i>-deletecmd &lt;command name&gt;</i></p>
+                            <p class="cmd-usage"><code class="code-inline">-deletecmd &lt;command name&gt;</code></p>
                         </div>
                         <div class="cmd-line">
                             <p class="cmd-cmd">updatecmd</p>
                             <p class="cmd-desc">Updates an existing custom command in the server.</p>
-                            <p class="cmd-usage"><i>-updatecmd &lt;command name&gt; &lt;new command response&gt;</i></p>
+                            <p class="cmd-usage"><code
+                                    class="code-inline">-updatecmd &lt;command name&gt; &lt;new command response&gt;</code>
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -351,12 +377,12 @@
                         <div class="cmd-line">
                             <p class="cmd-cmd">stats</p>
                             <p class="cmd-desc">Provides bot owners with statistics.</p>
-                            <p class="cmd-usage"><i>-stats</i></p>
+                            <p class="cmd-usage"><code class="code-inline">-stats</code></p>
                         </div>
                         <div class="cmd-line">
                             <p class="cmd-cmd">blacklist</p>
                             <p class="cmd-desc">Blacklists or un-blacklists users and servers from the bot.</p>
-                            <p class="cmd-usage"><i>-blacklist &lt;user/server&gt;</i></p>
+                            <p class="cmd-usage"><code class="code-inline">-blacklist &lt;user/server&gt;</code></p>
                         </div>
                     </div>
                 </div>

@@ -155,6 +155,10 @@ footer {
     transition: all .2s;
 }
 
+h2, b, p, a, li {
+    font-family: 'Roboto', sans-serif;
+}
+
 .buttons {
     padding: 1rem;
     display: flex;
@@ -235,6 +239,7 @@ pre {
     background: var(--main-bg-dark);
     border-radius: 5px;
     box-shadow: inset 0 3px 6px rgba(0,0,0,0.16);
+    white-space: pre-wrap; 
 }
 
 main a {
@@ -271,6 +276,7 @@ header i { font-size: .9rem; }
 }
 
 .header-container-left { justify-content: flex-start; }
+.header-container-middle { width: 100%; display: none; justify-content: center; }
 .header-container-right { margin-left: auto; justify-content: flex-end; }
 
 .nav-container {
@@ -327,6 +333,10 @@ header i { font-size: .9rem; }
     min-width: 50px;
 }
 
+.header-img-big {
+    height: 50px;
+}
+
 header li a:hover,
 header li a:focus-within {
     color: var(--text-dimmed);
@@ -343,6 +353,15 @@ header li a:focus-within {
 
 .active-page { border-bottom: 2px solid var(--text-main); }
 .active-page:hover, .active-page:focus-within { border-bottom: 2px solid var(--text-dimmed); }
+
+.header-menu {
+    font-size: 2rem;
+}
+
+.on-right {
+    margin-left: auto;
+    justify-content: flex-end;
+}
 /* HEADER END */
 
 /* HERO */
@@ -364,11 +383,13 @@ header li a:focus-within {
 }
 
 .hero-desc {
+    padding: 0 1rem;
     text-align: center;
     font-size: 1.75rem;
 }
 
 .hero-btn {
+    text-align: center;
     font-family: 'Sen', sans-serif;
     font-size: 1.5rem;
     padding: .5rem 1rem;
@@ -482,20 +503,30 @@ header li a:focus-within {
 /* FAQ END */
 
 /* ABOUT US */
-.team-member {
-    padding: 1rem;
+.about-wrapper {
     display: flex;
+    flex-flow: row wrap;
     align-items: center;
     justify-content: center;
 }
 
+.team-member {
+    min-width: 400px;
+    flex: 0 0 50%;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+}
+
 .team-member-pic {
-    width: 200px;
-    border-radius: 50%;
+    min-width: 125px;
+    max-width: 125px;
+    border-radius: 25%;
     margin-right: 1.5rem;
 }
 
 .team-member-details {
+    width: 100%;
     display: flex;
     flex-flow: column;
 }
@@ -504,6 +535,7 @@ header li a:focus-within {
     display: flex;
     flex-flow: column;
     margin: .5rem;
+    white-space: nowrap;
 }
 
 .about-label {
@@ -519,7 +551,81 @@ header li a:focus-within {
 .about-link {
     font-size: 2rem;
     color: var(--text-main);
-    padding-right: 1rem;
+    margin-right: 1rem;
 }
 
 .about-link:hover, .about-link:focus { color: var(--text-dimmed); }
+/* ABOUT END */
+
+/* MEDIA QUERIES */
+@media only screen and (max-width: 1500px) {
+    .page-wrapper {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 1010px) {
+    .header-container-left { display: none; }
+    .header-container-right { display: none; }
+    .header-container-middle { display: flex; }
+    .hero-img { padding: 0 2rem; }
+    .hero-desc { font-size: 1.5rem; }
+    .hero-btn { font-size: 1.25rem; }
+}
+
+@media only screen and (max-width: 800px) {
+    .page-wrapper {
+        flex-flow: column;
+        align-items: center;
+    }
+    .page-content {
+        margin: 0;
+    }
+    .page-selector {
+        width: 100%;
+        padding: 0;
+        margin-bottom: 1rem;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .cmd-container {
+        padding: 1rem;
+    }
+    .cmd-table-header {
+        display: none;
+    }
+    .cmd-line {
+        flex-flow: column;
+    }
+    .cmd-cmd {
+        font-weight: 700;
+        font-size: 1.1rem;
+    }
+    .cmd-desc {
+        padding: .5rem 0;
+    }
+    .team-member {
+        flex-flow: column;
+        min-width: auto;
+    }
+    .team-member-pic {
+        min-width: 100px;
+        margin-right: 0;
+    }
+    .team-member-details {
+        align-items: center;
+    }
+    .about h2 {
+        text-align: center;
+    }
+    .about-label {
+        text-align: center;
+    }
+    .about-link {
+        margin: 0 .5rem;
+    }
+    .hero .buttons {
+        flex-flow: column;
+    }
+}
