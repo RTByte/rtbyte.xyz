@@ -50,6 +50,17 @@
 </head>
 
 <body id="main">
+    <ul id="mobile-menu" class="mobile-menu nav-container mobile-menu-hide mobile-menu-inactive">
+        <a href="#" onclick="mobileMenuClose()"><i class="header-menu mobile-menu-close fas fa-times"></i></a>
+        <li class="img-container"><a href="/"><img class="header-img" src="/src/img/rtbyte-circle-outline.svg"></a></li>
+        <li><a class="mobile-menu-item" href="/commands">COMMANDS</a></li>
+        <li><a class="mobile-menu-item" href="/github" target="_blank">GITHUB</a></li>
+        <li><a class="mobile-menu-item" href="/discord" target="_balnk">DISCORD</a></li>
+        <li><a class="mobile-menu-item" href="/faq">F.A.Q.</a></li>
+        <li><a class="mobile-menu-item" href="https://status.rtbyte.xyz/">STATUS</a></li>
+        <li><a class="mobile-menu-item active-page" href="/about">ABOUT US</a></li>
+        <li><a class="mobile-menu-item" href="/donate" target="_blank">DONATE</a></li>
+    </ul>
     <header>
         <div class="navbar desktop">
             <nav class="header-container header-container-left">
@@ -61,7 +72,6 @@
                                 class="fas fa-chevron-down"></i></a>
                         <ul class="nav-dropdown" aria-label="submenu">
                             <li class="dropdown-item"><a href="/github" target="_blank">GITHUB</a></li>
-                            <li class="dropdown-item"><a href="/libraries">LIBRARIES</a></li>
                         </ul>
                     </li>
                     <li class="has-dropdown" aria-haspopup="true"><a href="#">SUPPORT <i
@@ -79,10 +89,11 @@
                 <ul class="nav-container">
                     <li class="img-container"><a href="/"><img class="header-img"
                                 src="/src/img/rtbyte-circle-outline.svg"></a></li>
-                    <li><a href="#" onclick="mobile-menu"><i class="header-menu fad fa-bars"></i></a></li>
+                    <li><a href="#" onclick="mobileMenuOpen()"><i class="header-menu fad fa-bars"></i></a></li>
                 </ul>
                 <div class="buttons on-right">
                     <a class="btn header-btn" href="/invite" target="_blank">ADD RTBYTE</a>
+                    <a class="btn header-btn donate-btn" href="/donate" target="_blank">DONATE</a>
                 </div>
             </nav>
             <nav class="header-container header-container-right">
@@ -104,6 +115,7 @@
                     <ul class="menu-list">
                         <a id="coreTeamSelector" class="is-active" onclick="coreTeamActive()" href="#/core-team">Core
                             team</a>
+                        <a id="shoutoutSelector" onclick="shoutoutActive()" href="#/core-team">Shout-outs</a>
                     </ul>
                 </aside>
             </div>
@@ -198,32 +210,81 @@
                         </div>
                     </div>
                 </div>
+                <div id="shoutouts">
+                    <div class="content-wrapper">
+                        <div class="content-container">
+                            <h2><a href="https://github.com/bdistin">AoDude</a>, <a
+                                    href="https://github.com/kyranet">Kyra</a>, and <a
+                                    href="https://github.com/dirigeants">everyone else at Dirigeants</a></h2>
+                            <p class="content-text">All of the contributors, whether they be part of the core team or
+                                the community, have done an awesome job making these frameworks and tools.</p>
+                        </div>
+                        <div class="content-container">
+                            <h2><a href="https://github.com/amishshah">Amish Shah</a>, <a
+                                    href="https://github.com/discordjs">and the rest of the team behind
+                                    Discord.js</a></h2>
+                            <p class="content-text">These ladies and gentlemen have poured countless hours into making
+                                one of the best interfaces around.</p>
+                        </div>
+                        <div class="content-container">
+                            <h2><a href="http://mokkaquillart.tumblr.com/">MokkaQuill</a></h2>
+                            <p class="content-text">Thanks to MokkaQuill for providing us with our logo.</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </main>
     <script>
-        function generalActive() {
-            const general = document.getElementById("general")
-            const generalSelector = document.getElementById("generalSelector")
-            const config = document.getElementById("configuration")
-            const configSelector = document.getElementById("configSelector")
+        // Moblie menu
+        const mobileMenu = document.getElementById("mobile-menu")
 
-            general.style.display = 'block';
-            generalSelector.classList.add('is-active');
-            config.style.display = 'none';
-            configSelector.classList.remove('is-active');
+        function showMobileMenu() {
+            mobileMenu.classList.add('mobile-menu-active');
+            mobileMenu.classList.remove('mobile-menu-inactive');
+        }
+        function mobileMenuOpen() {
+            mobileMenu.classList.add('mobile-menu-show');
+            mobileMenu.classList.remove('mobile-menu-hide');
+            setTimeout(function () {
+                showMobileMenu();
+            }, 30);
+        }
+        function hideMobileMenu() {
+            mobileMenu.classList.add('mobile-menu-hide');
+            mobileMenu.classList.remove('mobile-menu-show');
+        }
+        function mobileMenuClose() {
+            mobileMenu.classList.add('mobile-menu-inactive');
+            mobileMenu.classList.remove('mobile-menu-active');
+            setTimeout(function () {
+                hideMobileMenu();
+            }, 100);
+        }
+        // Moblie menu end
+
+        function coreTeamActive() {
+            const coreTeam = document.getElementById("core-team")
+            const coreTeamSelector = document.getElementById("coreTeamSelector")
+            const shoutouts = document.getElementById("shoutouts")
+            const shoutoutSelector = document.getElementById("shoutoutSelector")
+
+            coreTeam.style.display = 'block';
+            coreTeamSelector.classList.add('is-active');
+            shoutouts.style.display = 'none';
+            shoutoutSelector.classList.remove('is-active');
         }
 
-        function configActive() {
-            const general = document.getElementById("general")
-            const generalSelector = document.getElementById("generalSelector")
-            const config = document.getElementById("configuration")
-            const configSelector = document.getElementById("configSelector")
+        function shoutoutActive() {
+            const coreTeam = document.getElementById("core-team")
+            const coreTeamSelector = document.getElementById("coreTeamSelector")
+            const shoutouts = document.getElementById("shoutouts")
+            const shoutoutSelector = document.getElementById("shoutoutSelector")
 
-            general.style.display = 'none';
-            generalSelector.classList.remove('is-active');
-            config.style.display = 'block';
-            configSelector.classList.add('is-active');
+            coreTeam.style.display = 'none';
+            coreTeamSelector.classList.remove('is-active');
+            shoutouts.style.display = 'block';
+            shoutoutSelector.classList.add('is-active');
         }
     </script>
 </body>

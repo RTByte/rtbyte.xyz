@@ -48,6 +48,17 @@
 </head>
 
 <body id="main">
+    <ul id="mobile-menu" class="mobile-menu nav-container mobile-menu-hide mobile-menu-inactive">
+        <a href="#" onclick="mobileMenuClose()"><i class="header-menu mobile-menu-close fas fa-times"></i></a>
+        <li class="img-container"><a href="/"><img class="header-img" src="/src/img/rtbyte-circle-outline.svg"></a></li>
+        <li><a class="mobile-menu-item active-page" href="/commands">COMMANDS</a></li>
+        <li><a class="mobile-menu-item" href="/github" target="_blank">GITHUB</a></li>
+        <li><a class="mobile-menu-item" href="/discord" target="_balnk">DISCORD</a></li>
+        <li><a class="mobile-menu-item" href="/faq">F.A.Q.</a></li>
+        <li><a class="mobile-menu-item" href="https://status.rtbyte.xyz/">STATUS</a></li>
+        <li><a class="mobile-menu-item" href="/about">ABOUT US</a></li>
+        <li><a class="mobile-menu-item" href="/donate" target="_blank">DONATE</a></li>
+    </ul>
     <header>
         <div class="navbar desktop">
             <nav class="header-container header-container-left">
@@ -59,7 +70,6 @@
                                 class="fas fa-chevron-down"></i></a>
                         <ul class="nav-dropdown" aria-label="submenu">
                             <li class="dropdown-item"><a href="/github" target="_blank">GITHUB</a></li>
-                            <li class="dropdown-item"><a href="/libraries">LIBRARIES</a></li>
                         </ul>
                     </li>
                     <li class="has-dropdown" aria-haspopup="true"><a href="#">SUPPORT <i
@@ -78,10 +88,11 @@
                 <ul class="nav-container">
                     <li class="img-container"><a href="/"><img class="header-img"
                                 src="/src/img/rtbyte-circle-outline.svg"></a></li>
-                    <li><a href="#" onclick="mobile-menu"><i class="header-menu fad fa-bars"></i></a></li>
+                    <li><a href="#" onclick="mobileMenuOpen()"><i class="header-menu fad fa-bars"></i></a></li>
                 </ul>
                 <div class="buttons on-right">
                     <a class="btn header-btn" href="/invite" target="_blank">ADD RTBYTE</a>
+                    <a class="btn header-btn donate-btn" href="/donate" target="_blank">DONATE</a>
                 </div>
             </nav>
             <nav class="header-container header-container-right">
@@ -390,6 +401,33 @@
         </div>
     </main>
     <script>
+        // Moblie menu
+        const mobileMenu = document.getElementById("mobile-menu")
+
+        function showMobileMenu() {
+            mobileMenu.classList.add('mobile-menu-active');
+            mobileMenu.classList.remove('mobile-menu-inactive');
+        }
+        function mobileMenuOpen() {
+            mobileMenu.classList.add('mobile-menu-show');
+            mobileMenu.classList.remove('mobile-menu-hide');
+            setTimeout(function () {
+                showMobileMenu();
+            }, 30);
+        }
+        function hideMobileMenu() {
+            mobileMenu.classList.add('mobile-menu-hide');
+            mobileMenu.classList.remove('mobile-menu-show');
+        }
+        function mobileMenuClose() {
+            mobileMenu.classList.add('mobile-menu-inactive');
+            mobileMenu.classList.remove('mobile-menu-active');
+            setTimeout(function () {
+                hideMobileMenu();
+            }, 100);
+        }
+        // Moblie menu end
+
         function usrActive() {
             const usr = document.getElementById("user")
             const usrSelector = document.getElementById("usrSelector")
