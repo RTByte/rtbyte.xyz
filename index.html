@@ -44,6 +44,8 @@
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.12.1/css/all.css"
         integrity="sha384-TxKWSXbsweFt0o2WqfkfJRRNVaPdzXJ/YLqgStggBVRREXkwU7OKz+xXtqOU4u8+" crossorigin="anonymous">
     <link rel="stylesheet" href="/src/css/main.css" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" />
 </head>
 
 <body id="home">
@@ -144,6 +146,27 @@
                 hideMobileMenu();
             }, 100);
         }
+    </script>
+    <script src="https://9fykl6sv811h.statuspage.io/embed/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js" data-cfasync="false"></script>
+    <script>
+        window.cookieconsent.initialise({
+            "palette": {
+                "popup": {
+                    "background": "#181a22"
+                },
+                "button": {
+                    "background": "#ac0000"
+                }
+            },
+            "theme": "classic",
+            "position": "bottom-right",
+            "content": {
+                "message": "We use cookies to ensure you get the best possible experience on our site.",
+                "dismiss": "Got it!",
+                "link": "Learn more"
+            }
+        });
     </script>
 </body>
 

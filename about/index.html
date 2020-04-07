@@ -46,6 +46,8 @@
         integrity="sha384-RiuSF/PBDHssKXqYfH16Hw3famw7Xg29hNO7Lg636dZXUg42q2UtNLPsGfihOxT9"
         crossorigin="anonymous"></script>
     <link rel="stylesheet" href="/src/css/main.css" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" />
 </head>
 
 <body id="main">
@@ -289,6 +291,27 @@
             shoutouts.style.display = 'block';
             shoutoutSelector.classList.add('is-active');
         }
+    </script>
+    <script src="https://9fykl6sv811h.statuspage.io/embed/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js" data-cfasync="false"></script>
+    <script>
+        window.cookieconsent.initialise({
+            "palette": {
+                "popup": {
+                    "background": "#181a22"
+                },
+                "button": {
+                    "background": "#ac0000"
+                }
+            },
+            "theme": "classic",
+            "position": "bottom-right",
+            "content": {
+                "message": "We use cookies to ensure you get the best possible experience on our site.",
+                "dismiss": "Got it!",
+                "link": "Learn more"
+            }
+        });
     </script>
 </body>
 
