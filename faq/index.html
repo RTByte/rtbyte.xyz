@@ -226,11 +226,11 @@
                             <p class="content-text">Setting a value for a configuration key follows the same structure
                                 of
                                 viewing the configuration, but is slightly different.</p>
-                            <pre><code>-conf set logs.events.messageDelete <span class="highlighted">true</span></code></pre>
+                            <pre><code>-conf set logs.events.channelUpdate <span class="highlighted">true</span></code><br/><code>           <b>🠕</b>     <b>🠕</b>           <b>🠕</b>        <b>🠕</b></code><br/><code>       folder  subfolder   key     value</code></pre>
                             <p class="content-text">In this example, we're first telling the command that we want to
                                 <i>set</i> a configuration instead of showing one. After that, we're defining the
-                                folder(s), then the actual key itself. The key, much like a folder, is accessed by
-                                typing its name. If it's in a folder, you'd need to add <code
+                                folder (and optionally any subfolders), then the actual key itself. The key, much like a
+                                folder, is accessed by typing its name. If it's in a folder, you'd need to add <code
                                     class="code-inline">.key</code> after the folder name. If the key isn't in a folder,
                                 you can simply type in the name of the key.</p>
                         </div>
@@ -244,6 +244,18 @@
                             <p class="content-text">We try to name the configuration options as clearly as possible, but
                                 in
                                 some cases it doesn't come across as clearly as we intended.</p>
+                        </div>
+                        <div class="content-container">
+                            <h2 class="question">What event and moderation logs are enabled by default?</h2>
+                            <p class="content-text">All moderation logs are enabled by default. The event logs that are
+                                enabled by default are as follows:</p>
+                            <ul>
+                                <li class="content-text">Server settings change</li>
+                                <li class="content-text">Member joins</li>
+                                <li class="content-text">Member leaves</li>
+                                <li class="content-text">Message is deleted</li>
+                                <li class="content-text">Message is edited</li>
+                            </ul>
                         </div>
                     </div>
                 </div>
