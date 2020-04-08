@@ -129,8 +129,8 @@
                 <aside class="menu">
                     <ul class="menu-list">
                         <a id="coreTeamSelector" class="is-active" onclick="coreTeamActive()" href="#/core-team">Core
-                            team</a>
-                        <a id="shoutoutSelector" onclick="shoutoutActive()" href="#/core-team">Shout-outs</a>
+                            team & shout-outs</a>
+                        <a id="sponsorSelector" onclick="sponsorActive()" href="#/sponsors">Project sponsors</a>
                     </ul>
                 </aside>
             </div>
@@ -224,8 +224,6 @@
                             </div>
                         </div>
                     </div>
-                </div>
-                <div id="shoutouts">
                     <div class="content-wrapper">
                         <div class="content-container">
                             <h2><a href="https://github.com/bdistin">AoDude</a>, <a
@@ -235,9 +233,8 @@
                                 the community, have done an awesome job making these frameworks and tools.</p>
                         </div>
                         <div class="content-container">
-                            <h2><a href="https://github.com/amishshah">Amish Shah</a>, <a
-                                    href="https://github.com/discordjs">and the rest of the team behind
-                                    Discord.js</a></h2>
+                            <h2><a href="https://github.com/amishshah">Amish Shah</a>, and the rest of the <a
+                                    href="https://github.com/discordjs">team behind Discord.js</a></h2>
                             <p class="content-text">These ladies and gentlemen have poured countless hours into making
                                 one of the best interfaces around.</p>
                         </div>
@@ -245,6 +242,10 @@
                             <h2><a href="http://mokkaquillart.tumblr.com/">MokkaQuill</a></h2>
                             <p class="content-text">Thanks to MokkaQuill for providing us with our logo.</p>
                         </div>
+                    </div>
+                </div>
+                <div id="sponsors">
+                    <div class="content-wrapper">
                     </div>
                 </div>
             </div>
@@ -281,25 +282,25 @@
         function coreTeamActive() {
             const coreTeam = document.getElementById("core-team")
             const coreTeamSelector = document.getElementById("coreTeamSelector")
-            const shoutouts = document.getElementById("shoutouts")
-            const shoutoutSelector = document.getElementById("shoutoutSelector")
+            const sponsors = document.getElementById("sponsors")
+            const sponsorSelector = document.getElementById("sponsorSelector")
 
             coreTeam.style.display = 'block';
             coreTeamSelector.classList.add('is-active');
-            shoutouts.style.display = 'none';
-            shoutoutSelector.classList.remove('is-active');
+            sponsors.style.display = 'none';
+            sponsorSelector.classList.remove('is-active');
         }
 
-        function shoutoutActive() {
+        function sponsorActive() {
             const coreTeam = document.getElementById("core-team")
             const coreTeamSelector = document.getElementById("coreTeamSelector")
-            const shoutouts = document.getElementById("shoutouts")
-            const shoutoutSelector = document.getElementById("shoutoutSelector")
+            const sponsors = document.getElementById("sponsors")
+            const sponsorSelector = document.getElementById("sponsorSelector")
 
             coreTeam.style.display = 'none';
             coreTeamSelector.classList.remove('is-active');
-            shoutouts.style.display = 'block';
-            shoutoutSelector.classList.add('is-active');
+            sponsors.style.display = 'block';
+            sponsorSelector.classList.add('is-active');
         }
     </script>
     <script src="https://9fykl6sv811h.statuspage.io/embed/script.js"></script>
