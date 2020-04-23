@@ -128,6 +128,7 @@
                     <ul class="menu-list">
                         <a id="usrSelector" class="is-active" onclick="usrActive()" href="#/user">User</a>
                         <a id="modSelector" onclick="modActive()" href="#/moderator">Moderator</a>
+                        <a id="mgmtSelector" onclick="mgmtActive()" href="#/management">Management</a>
                         <a id="admSelector" onclick="admActive()" href="#/admin">Admin</a>
                         <a id="devSelector" onclick="devActive()" href="#/developer">Developer</a>
                     </ul>
@@ -205,6 +206,13 @@
                             <p class="cmd-usage"><code class="code-inline">-lyrics &lt;song&gt;</code></p>
                         </div>
                         <div class="cmd-line">
+                            <p class="cmd-cmd">pin</p>
+                            <p class="cmd-desc">Fetch a random message from the pinboard. Specify a user at the end to
+                                limit the selection to
+                                messages sent by the specified user.</p>
+                            <p class="cmd-usage"><code class="code-inline">-pin [user]</code></p>
+                        </div>
+                        <div class="cmd-line">
                             <p class="cmd-cmd">ping</p>
                             <p class="cmd-desc">Runs a connection test to Discord.</p>
                             <p class="cmd-usage"><code class="code-inline">-ping</code></p>
@@ -240,14 +248,19 @@
                         <div class="cmd-line">
                             <p class="cmd-cmd">star</p>
                             <p class="cmd-desc">Fetch a random message from the starboard. Append <i>top</i> to get the
-                                top
-                                starred message instead.</p>
-                            <p class="cmd-usage"><code class="code-inline">-star [top]</code></p>
+                                top starred message instead. Specify a user at the end to limit the selection to
+                                messages sent by the specified user.</p>
+                            <p class="cmd-usage"><code class="code-inline">-star [top] [user]</code></p>
                         </div>
                         <div class="cmd-line">
                             <p class="cmd-cmd">weather</p>
                             <p class="cmd-desc">Fetch the current weather for a specified location.</p>
                             <p class="cmd-usage"><code class="code-inline">-weather &lt;location&gt;</code></p>
+                        </div>
+                        <div class="cmd-line">
+                            <p class="cmd-cmd">wiki</p>
+                            <p class="cmd-desc">Find a Wikipedia article by title.</p>
+                            <p class="cmd-usage"><code class="code-inline">-wiki &lt;article&gt;</code></p>
                         </div>
                     </div>
                 </div>
@@ -354,6 +367,81 @@
                         </div>
                     </div>
                 </div>
+                <div id="management">
+                    <div class="cmd-table-header">
+                        <div class="cmd-header-line">
+                            <p class="cmd-cmd cmd-header">Command</p>
+                            <p class="cmd-desc cmd-header">Description</p>
+                            <p class="cmd-usage cmd-header">Usage</p>
+                        </div>
+                    </div>
+                    <div class="cmd-container">
+                        <div class="cmd-line">
+                            <p class="cmd-cmd">customcmds</p>
+                            <p class="cmd-desc">A series of commands to let you manage your custom commands.</p>
+                            <p class="cmd-usage"><code
+                                    class="code-inline">-customcmds &lt;enable/disable/create/delete/update/show&gt; (cmd name) (response)</code>
+                            </p>
+                        </div>
+                        <div class="cmd-line">
+                            <p class="cmd-cmd">filters</p>
+                            <p class="cmd-desc">A series of commands to let you modify the filter settings for your
+                                server.</p>
+                            <p class="cmd-usage"><code
+                                    class="code-inline">-filters &lt;enable/disable/set/remove/reset/show&gt; (setting) (subsetting) (value)</code>
+                            </p>
+                        </div>
+                        <div class="cmd-line">
+                            <p class="cmd-cmd">greetings</p>
+                            <p class="cmd-desc">A series of commands to let you modify the greeting settings for your
+                                server. When setting the welcome message, you can type <code
+                                    class="code-inline">%user%</code> to get the user's @mention.</p>
+                            <p class="cmd-usage"><code
+                                    class="code-inline">-greetings &lt;enable/disable/set/reset/show&gt; (setting) (value)</code>
+                            </p>
+                        </div>
+                        <div class="cmd-line">
+                            <p class="cmd-cmd">logs</p>
+                            <p class="cmd-desc">A series of commands to let you modify the log settings for your server.
+                            </p>
+                            <p class="cmd-usage"><code
+                                    class="code-inline">-logs &lt;enable/disable/set/reset/show&gt; (setting) (value)</code>
+                            </p>
+                        </div>
+                        <div class="cmd-line">
+                            <p class="cmd-cmd">moderation</p>
+                            <p class="cmd-desc">A series of commands to let you modify the log settings for your server.
+                            </p>
+                            <p class="cmd-usage"><code
+                                    class="code-inline">-moderation &lt;enable/disable/set/reset/show&gt; (value)</code>
+                            </p>
+                        </div>
+                        <div class="cmd-line">
+                            <p class="cmd-cmd">pinboard</p>
+                            <p class="cmd-desc">A series of commands to let you modify the pinboard settings for your
+                                server.</p>
+                            <p class="cmd-usage"><code
+                                    class="code-inline">-pinboard &lt;enable/disable/set/remove/reset/show&gt; (setting) (value)</code>
+                            </p>
+                        </div>
+                        <div class="cmd-line">
+                            <p class="cmd-cmd">settings</p>
+                            <p class="cmd-desc">A series of commands to let you modify the general and role settings for
+                                your server.</p>
+                            <p class="cmd-usage"><code
+                                    class="code-inline">-settings &lt;enable/disable/set/remove/reset/show&gt; (setting) (subsetting) (value)</code>
+                            </p>
+                        </div>
+                        <div class="cmd-line">
+                            <p class="cmd-cmd">starboard</p>
+                            <p class="cmd-desc">A series of commands to let you modify the starboard settings for your
+                                server.</p>
+                            <p class="cmd-usage"><code
+                                    class="code-inline">-starboard &lt;enable/disable/set/remove/reset/show&gt; (setting) (value)</code>
+                            </p>
+                        </div>
+                    </div>
+                </div>
                 <div id="admin">
                     <div class="cmd-table-header">
                         <div class="cmd-header-line">
@@ -368,25 +456,6 @@
                             <p class="cmd-desc">Define per-server configuration via commmand.</p>
                             <p class="cmd-usage"><code
                                     class="code-inline">-conf &lt;set/show/remove/reset&gt; (key) (value)</code></p>
-                        </div>
-                        <div class="cmd-line">
-                            <p class="cmd-cmd">createcmd</p>
-                            <p class="cmd-desc">Creates a custom command for the server.</p>
-                            <p class="cmd-usage"><code
-                                    class="code-inline">-createcmd &lt;command name&gt; &lt;command response&gt;</code>
-                            </p>
-                        </div>
-                        <div class="cmd-line">
-                            <p class="cmd-cmd">deletecmd</p>
-                            <p class="cmd-desc">Deletes a custom command from the server.</p>
-                            <p class="cmd-usage"><code class="code-inline">-deletecmd &lt;command name&gt;</code></p>
-                        </div>
-                        <div class="cmd-line">
-                            <p class="cmd-cmd">updatecmd</p>
-                            <p class="cmd-desc">Updates an existing custom command in the server.</p>
-                            <p class="cmd-usage"><code
-                                    class="code-inline">-updatecmd &lt;command name&gt; &lt;new command response&gt;</code>
-                            </p>
                         </div>
                     </div>
                 </div>
@@ -442,20 +511,24 @@
         }
         // Moblie menu end
 
-        function usrActive() {
-            const usr = document.getElementById("user")
-            const usrSelector = document.getElementById("usrSelector")
-            const mod = document.getElementById("moderator")
-            const modSelector = document.getElementById("modSelector")
-            const adm = document.getElementById("admin")
-            const admSelector = document.getElementById("admSelector")
-            const dev = document.getElementById("developer")
-            const devSelector = document.getElementById("devSelector")
+        const usr = document.getElementById("user");
+        const usrSelector = document.getElementById("usrSelector");
+        const mod = document.getElementById("moderator");
+        const modSelector = document.getElementById("modSelector");
+        const mgmt = document.getElementById("management");
+        const mgmtSelector = document.getElementById("mgmtSelector");
+        const adm = document.getElementById("admin");
+        const admSelector = document.getElementById("admSelector");
+        const dev = document.getElementById("developer");
+        const devSelector = document.getElementById("devSelector");
 
+        function usrActive() {
             usr.style.display = 'block';
             usrSelector.classList.add('is-active');
             mod.style.display = 'none';
             modSelector.classList.remove('is-active');
+            mgmt.style.display = 'none';
+            mgmtSelector.classList.remove('is-active');
             adm.style.display = 'none';
             admSelector.classList.remove('is-active');
             dev.style.display = 'none';
@@ -463,15 +536,25 @@
         }
 
         function modActive() {
-            const usr = document.getElementById("user")
-            const mod = document.getElementById("moderator")
-            const adm = document.getElementById("admin")
-            const dev = document.getElementById("developer")
-
             usr.style.display = 'none';
             usrSelector.classList.remove('is-active');
             mod.style.display = 'block';
             modSelector.classList.add('is-active');
+            mgmt.style.display = 'none';
+            mgmtSelector.classList.remove('is-active');
+            adm.style.display = 'none';
+            admSelector.classList.remove('is-active');
+            dev.style.display = 'none';
+            devSelector.classList.remove('is-active');
+        }
+
+        function mgmtActive() {
+            usr.style.display = 'none';
+            usrSelector.classList.remove('is-active');
+            mod.style.display = 'none';
+            modSelector.classList.remove('is-active');
+            mgmt.style.display = 'block';
+            mgmtSelector.classList.add('is-active');
             adm.style.display = 'none';
             admSelector.classList.remove('is-active');
             dev.style.display = 'none';
@@ -479,15 +562,12 @@
         }
 
         function admActive() {
-            const usr = document.getElementById("user")
-            const mod = document.getElementById("moderator")
-            const adm = document.getElementById("admin")
-            const dev = document.getElementById("developer")
-
             usr.style.display = 'none';
             usrSelector.classList.remove('is-active');
             mod.style.display = 'none';
             modSelector.classList.remove('is-active');
+            mgmt.style.display = 'none';
+            mgmtSelector.classList.remove('is-active');
             adm.style.display = 'block';
             admSelector.classList.add('is-active');
             dev.style.display = 'none';
@@ -495,15 +575,12 @@
         }
 
         function devActive() {
-            const usr = document.getElementById("user")
-            const mod = document.getElementById("moderator")
-            const adm = document.getElementById("admin")
-            const dev = document.getElementById("developer")
-
             usr.style.display = 'none';
             usrSelector.classList.remove('is-active');
             mod.style.display = 'none';
             modSelector.classList.remove('is-active');
+            mgmt.style.display = 'none';
+            mgmtSelector.classList.remove('is-active');
             adm.style.display = 'none';
             admSelector.classList.remove('is-active');
             dev.style.display = 'block';

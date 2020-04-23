@@ -488,6 +488,7 @@ header li a:focus-within {
 
 #user { display: block; }
 #moderator { display: none; }
+#management { display: none; }
 #admin { display: none; }
 #developer { display: none; }
 
