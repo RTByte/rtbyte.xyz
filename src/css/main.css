@@ -374,7 +374,7 @@ header li a:focus-within {
 
 .mobile-menu {
     background: #0f1118fa;
-    position: absolute;
+    position: fixed;
     z-index: 100;
     width: 100%;
     height: 100vh;
@@ -488,6 +488,7 @@ header li a:focus-within {
 
 #user { display: block; }
 #moderator { display: none; }
+#management { display: none; }
 #admin { display: none; }
 #developer { display: none; }
 
