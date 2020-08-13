@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Viewport & rendering -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+    <!-- Basic metadata -->
+    <title><%= htmlWebpackPlugin.options.title %></title>
+    <meta name="description" content="An open-source modular multipurpose Discord bot built on the incredible Klasa framework for discord.js.">
+    <meta name="author" content="Rasmus Gerdin">
+
+    <!-- OpenGraph & Twitter Cards -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="RTByte">
+    <meta property="og:description" content="An open-source modular multipurpose Discord bot built on the incredible Klasa framework for discord.js.">
+    <meta property="og:url" content="https://rtbyte.xyz/">
+    <meta property="og:image" content="https://rtbyte.xyz/img/og-img.jpg">
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@rasmusgerdin_" />
+    <meta name="twitter:creator" content="@rasmusgerdin_" />
+    <meta name="twitter:title" content="RTByte" />
+    <meta name="twitter:description" content="An open-source modular multipurpose Discord bot built on the incredible Klasa framework for discord.js." />
+    <meta name="twitter:image" content="https://rtbyte.xyz/img/og-img.jpg" />
+    <meta name="twitter:image:alt" content="RTByte logo" />
+
+    <!-- Favicon & other metadata -->
+    <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
+    <link rel="manifest" href="./site.webmanifest">
+    <link rel="mask-icon" href="./safari-pinned-tab.svg" color="#ac0000">
+    <meta name="msapplication-TileColor" content="#ac0000">
+    <meta name="theme-color" content="#ac0000">
+    <link rel="icon" href="./favicon.ico">
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-163042261-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-163042261-1');
+    </script>
+
+    <!-- Externals -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,700|Sen:700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" />
+  </head>
+  <body>
+    <noscript>
+      <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
+    </noscript>
+    <div id="app"></div>
+    <!-- built files will be auto injected -->
+    <script src="https://9fykl6sv811h.statuspage.io/embed/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js" data-cfasync="false"></script>
+    <script>
+        window.cookieconsent.initialise({
+            "palette": {
+                "popup": {
+                    "background": "#181a22"
+                },
+                "button": {
+                    "background": "#ac0000"
+                }
+            },
+            "theme": "classic",
+            "position": "bottom-right",
+            "content": {
+                "message": "We use cookies to ensure you get the best possible experience on our site.",
+                "dismiss": "Got it!",
+                "link": "Learn more"
+            }
+        });
+    </script>
+  </body>
+</html>
