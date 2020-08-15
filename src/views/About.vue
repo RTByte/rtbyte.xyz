@@ -9,21 +9,24 @@
         <aside class="menu">
           <ul class="menu-list">
             <a
-              id="coreTeamSelector"
-              class="is-active"
-              onclick="coreTeamActive()"
+              @click="coreTeamSelector()"
+              v-bind:class="{ 'is-active': coreTeamShow }"
               href="#/core-team"
             >
               Core team & shout-outs
             </a>
-            <a id="sponsorSelector" onclick="sponsorActive()" href="#/sponsors">
+            <a
+              @click="sponsorSelector()"
+              v-bind:class="{ 'is-active': sponsorShow }"
+              href="#/sponsors"
+            >
               Project sponsors
             </a>
           </ul>
         </aside>
       </div>
-      <div class="page-content">
-        <div id="core-team">
+      <div>
+        <div class="page-content" v-if="coreTeamShow">
           <div class="content-wrapper about-wrapper">
             <div class="team-member">
               <img
@@ -272,8 +275,55 @@
             </div>
           </div>
         </div>
-        <div id="sponsors">
-          <div class="content-wrapper"></div>
+        <div class="page-content" v-if="sponsorShow">
+          <div class="content-wrapper">
+            <div class="sponsor">
+              <img class="sponsor-img" src="@/assets/sponsors/atlassian.svg" />
+              <div class="sponsor-details">
+                <h2 class="sponsor-title">Atlassian</h2>
+                <span class="about-label sponsor-label">STATUSPAGE</span>
+                <p>
+                  We use
+                  <a
+                    href="https://www.atlassian.com/software/statuspage"
+                    target="_blank"
+                    >Statuspage</a
+                  >
+                  by Atlassian for our status page (<a
+                    href="https://status.rtbyte.xyz/"
+                    target="_blank"
+                    >status.rtbyte.xyz</a
+                  >) to display and notify our users of any downtime,
+                  maintenance, or other incidents related to RTByte and any of
+                  its services. We've been granted an open-source license by
+                  Atlassian for this.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="page-content" v-if="sponsorShow">
+          <div class="content-wrapper">
+            <div class="sponsor">
+              <img class="sponsor-img" src="@/assets/sponsors/crowdin.svg" />
+              <div class="sponsor-details">
+                <h2 class="sponsor-title">Crowdin</h2>
+                <span class="about-label sponsor-label"
+                  >LOCALIZATION MANAGEMENT</span
+                >
+                <p>
+                  We use
+                  <a href="https://crowdin.com/" target="_blank">Crowdin</a>
+                  to manage localization for RTByte and its services. Our
+                  Crowdin page can be found at
+                  <a href="https://translate.rtbyte.xyz/" target="_blank"
+                    >translate.rtbyte.xyz</a
+                  >. We've been granted an open-source license by Crowdin for
+                  this.
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -282,7 +332,23 @@
 
 <script>
 export default {
-  name: "About"
+  name: "About",
+  data: function() {
+    return {
+      coreTeamShow: true,
+      sponsorShow: false
+    };
+  },
+  methods: {
+    coreTeamSelector() {
+      this.$data.coreTeamShow = true;
+      this.$data.sponsorShow = false;
+    },
+    sponsorSelector() {
+      this.$data.coreTeamShow = false;
+      this.$data.sponsorShow = true;
+    }
+  }
 };
 </script>
 
@@ -328,6 +394,34 @@ export default {
   font-family: "Sen", sans-serif;
 }
 
+.sponsor {
+  flex: 1;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+}
+
+.sponsor-img {
+  max-width: 12rem;
+  min-width: 12rem;
+  margin-right: 2rem;
+  flex: 1;
+}
+
+.sponsor-details {
+  flex: 3;
+  display: flex;
+  flex-flow: column;
+}
+
+.sponsor-title {
+  font-size: 2rem;
+}
+
+.sponsor-label {
+  margin-bottom: 0.75rem;
+}
+
 .links {
   display: flex;
   margin: 0.5rem;
@@ -361,6 +455,9 @@ export default {
     flex-flow: column;
     min-width: auto;
   }
+  .sponsor {
+    flex-flow: column;
+  }
   .team-member-pic {
     min-width: 100px;
     margin-right: 0;
@@ -373,6 +470,13 @@ export default {
   }
   .about-label {
     text-align: center;
+  }
+  .sponsor-img {
+    margin: 0;
+    margin-bottom: 1rem;
+  }
+  .sponsor-label {
+    text-align: left;
   }
   .about-link {
     margin: 0 0.5rem;

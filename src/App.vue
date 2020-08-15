@@ -215,7 +215,6 @@ li {
 }
 
 .page-content {
-  width: 100%;
   margin: 1rem;
   background: var(--item-bg-dark);
   border-radius: 5px;
@@ -320,6 +319,7 @@ main a {
   }
   .page-content {
     margin: 0;
+    margin-bottom: 1rem;
   }
   .page-selector {
     width: 100%;
