@@ -162,11 +162,6 @@ header i {
   display: block;
 }
 
-.nav-container li:not(.dropdown-item),
-.nav-container li:not(.img-container) {
-  padding: 1rem;
-}
-
 .nav-container li .nav-dropdown {
   background-color: var(--main-bg-dark);
   visibility: hidden;
@@ -217,11 +212,6 @@ header i {
 header li a:hover,
 header li a:focus-within {
   color: var(--text-dimmed);
-}
-
-.img-container:hover,
-.img-container:focus-within {
-  filter: brightness(1.2);
 }
 
 .header-btn:hover,

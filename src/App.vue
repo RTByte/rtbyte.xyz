@@ -297,6 +297,16 @@ main a {
   background: var(--accent);
 }
 
+.nav-container li:not(.dropdown-item),
+.nav-container li:not(.img-container) {
+  padding: 1rem;
+}
+
+.img-container:hover,
+.img-container:focus-within {
+  filter: brightness(1.2);
+}
+
 @media only screen and (max-width: 1500px) {
   .page-wrapper {
     width: 100%;

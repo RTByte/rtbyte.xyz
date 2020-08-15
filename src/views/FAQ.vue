@@ -47,8 +47,8 @@
               </p>
               <p class="content-text">
                 For a full list of commands, please see the
-                <a href="/commands">Commands</a> page, or run the
-                <code class="code-inline">help</code> command.
+                <router-link to="/commands">Commands</router-link> page, or run
+                the <code class="code-inline">help</code> command.
               </p>
             </div>
             <div class="content-container">

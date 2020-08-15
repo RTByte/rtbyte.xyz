@@ -8,11 +8,7 @@
     </a>
     <li class="img-container">
       <router-link to="/">
-        <img
-          class="header-img"
-          src="@/assets/rtbyte-circle-outline.svg"
-          @click="mobileMenu()"
-        />
+        <img class="header-img" src="@/assets/rtbyte-circle-outline.svg" />
       </router-link>
     </li>
     <li>
