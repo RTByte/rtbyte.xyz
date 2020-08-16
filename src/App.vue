@@ -34,7 +34,7 @@ export default {
 :root {
   --accent: #ac0000;
   --complementary: #00acac;
-  --accent-lighter: #ce0000;
+  --accent-lighter: #ff3333;
   --complementary-lighter: #00cece;
   --body-bg-dark: #0f1118;
   --main-bg-dark: #181a22;
