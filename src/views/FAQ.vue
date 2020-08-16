@@ -62,7 +62,7 @@
                 <code class="code-inline">conf</code> command first, however.
                 For instructions on how to use the
                 <code class="code-inline">conf</code> command, please see the
-                <a onclick="configActive()" href="#/configuration"
+                <a @click="configSelector()" href="#/configuration"
                   >Configuration</a
                 >
                 category.

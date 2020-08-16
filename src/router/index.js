@@ -10,17 +10,7 @@ const routes = [
     name: "Home",
     component: Home,
     meta: {
-      title: "RTByte",
-      metaTags: [
-        {
-          name: "og:title",
-          content: "RTByte"
-        },
-        {
-          name: "twitter:title",
-          content: "RTByte"
-        }
-      ]
+      title: "RTByte"
     }
   },
   {
@@ -29,17 +19,7 @@ const routes = [
     component: () =>
       import(/* webpackChunkName: "about" */ "../views/Commands.vue"),
     meta: {
-      title: "Commands | RTByte",
-      metaTags: [
-        {
-          name: "og:title",
-          content: "Commands | RTByte"
-        },
-        {
-          name: "twitter:title",
-          content: "Commands | RTByte"
-        }
-      ]
+      title: "Commands | RTByte"
     }
   },
   {
@@ -47,17 +27,7 @@ const routes = [
     name: "F.A.Q.",
     component: () => import(/* webpackChunkName: "about" */ "../views/FAQ.vue"),
     meta: {
-      title: "F.A.Q. | RTByte",
-      metaTags: [
-        {
-          name: "og:title",
-          content: "F.A.Q. | RTByte"
-        },
-        {
-          name: "twitter:title",
-          content: "F.A.Q. | RTByte"
-        }
-      ]
+      title: "F.A.Q. | RTByte"
     }
   },
   {
@@ -69,17 +39,7 @@ const routes = [
     component: () =>
       import(/* webpackChunkName: "about" */ "../views/About.vue"),
     meta: {
-      title: "About us | RTByte",
-      metaTags: [
-        {
-          name: "og:title",
-          content: "About us | RTByte"
-        },
-        {
-          name: "twitter:title",
-          content: "About us | RTByte"
-        }
-      ]
+      title: "About us | RTByte"
     }
   }
 ];
