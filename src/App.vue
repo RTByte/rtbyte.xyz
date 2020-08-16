@@ -215,6 +215,7 @@ li {
 }
 
 .page-content {
+  width: 100%;
   margin: 1rem;
   background: var(--item-bg-dark);
   border-radius: 5px;

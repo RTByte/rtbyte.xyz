@@ -353,7 +353,10 @@ export default {
 </script>
 
 <style scoped>
-/* ABOUT US */
+.page-content {
+  width: auto;
+}
+
 .about-wrapper {
   display: flex;
   flex-flow: row wrap;
