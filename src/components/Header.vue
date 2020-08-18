@@ -209,6 +209,10 @@ header i {
   height: 50px;
 }
 
+header li a {
+  border-bottom: 2px solid transparent;
+}
+
 header li a:hover,
 header li a:focus-within {
   color: var(--text-dimmed);
@@ -219,7 +223,8 @@ header li a:focus-within {
   filter: brightness(1.2);
 }
 
-.active-page {
+.active-page,
+.router-link-active {
   border-bottom: 2px solid var(--text-main);
 }
 
