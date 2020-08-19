@@ -101,7 +101,8 @@ div >>> .page-content {
   white-space: nowrap;
 }
 
-.page-content >>> .about-label {
+.page-content >>> .about-label,
+div >>> .about-label {
   color: var(--text-sub);
   font-family: "Sen", sans-serif;
 }

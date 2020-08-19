@@ -20,7 +20,31 @@
                 >status.rtbyte.xyz</a
               >) to display and notify our users of any downtime, maintenance,
               or other incidents related to RTByte and any of its services.
-              We've been granted an open-source license by Atlassian for this.
+              We've been granted an open-source license by Atlassian.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="page-content">
+      <div class="content-wrapper">
+        <div class="sponsor">
+          <img class="sponsor-img" src="@/assets/sponsors/sentry.svg" />
+          <div class="sponsor-details">
+            <h2 class="sponsor-title">Sentry</h2>
+            <span class="about-label sponsor-label"
+              >ERROR MONITORING & TRACKING</span
+            >
+            <p>
+              We use
+              <a
+                href="https://www.atlassian.com/software/statuspage"
+                target="_blank"
+                >Sentry</a
+              >
+              to more easily track errors so that we can diagnose and fix them
+              as soon as possible. We've been granted an open-source license by
+              Sentry.
             </p>
           </div>
         </div>
@@ -42,7 +66,7 @@
               page can be found at
               <a href="https://translate.rtbyte.xyz/" target="_blank"
                 >translate.rtbyte.xyz</a
-              >. We've been granted an open-source license by Crowdin for this.
+              >. We've been granted an open-source license by Crowdin.
             </p>
           </div>
         </div>
