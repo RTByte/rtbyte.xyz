@@ -304,7 +304,7 @@ main a {
 
 .img-container:hover,
 .img-container:focus-within {
-  filter: brightness(1.2);
+  filter: brightness(0.8);
 }
 
 @media only screen and (max-width: 1500px) {
