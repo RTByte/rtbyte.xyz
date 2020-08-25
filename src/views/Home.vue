@@ -1,7 +1,11 @@
 <template>
   <div class="hero">
     <div class="hero-content">
-      <img class="hero-img" src="@/assets/rtbyte-circle-text.svg" />
+      <img
+        class="hero-img"
+        src="@/assets/rtbyte-flat-colored-light-text-horizontal.svg"
+        alt="RTByte logo with text"
+      />
       <p class="hero-desc">Your one-stop-shop for Discord server moderation.</p>
       <div class="buttons">
         <a class="btn hero-btn" href="/discord" target="_blank">

@@ -60,6 +60,6 @@ export default {
 
 <style scoped>
 .page-content >>> .highlighted {
-  color: var(--complementary-lighter);
+  color: var(--complementary);
 }
 </style>

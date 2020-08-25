@@ -7,7 +7,8 @@
             <router-link to="/">
               <img
                 class="header-img"
-                src="@/assets/rtbyte-circle-outline.svg"
+                src="@/assets/rtbyte-flat-colored-light.svg"
+                alt="RTByte logo"
               />
             </router-link>
           </li>
@@ -54,7 +55,8 @@
             <router-link to="/">
               <img
                 class="header-img"
-                src="@/assets/rtbyte-circle-outline.svg"
+                src="@/assets/rtbyte-flat-colored-light.svg"
+                alt="RTByte logo"
               />
             </router-link>
           </li>

@@ -32,10 +32,10 @@ export default {
 <style>
 /* VARIABLES */
 :root {
-  --accent: #ac0000;
-  --complementary: #00acac;
-  --accent-lighter: #ff3333;
-  --complementary-lighter: #00cece;
+  --accent: #fe3132;
+  --complementary: #31fefd;
+  --accent-lighter: #ff5050;
+  --complementary-lighter: #50ffff;
   --body-bg-dark: #0f1118;
   --main-bg-dark: #181a22;
   --item-bg-dark: #1c1f29;
