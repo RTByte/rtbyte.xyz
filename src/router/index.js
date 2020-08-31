@@ -9,38 +9,27 @@ const routes = [
     path: "/",
     name: "Home",
     component: Home,
-    meta: {
-      title: "RTByte"
-    }
+    meta: { title: "RTByte" }
   },
   {
     path: "/commands",
     name: "Commands",
     component: () =>
       import(/* webpackChunkName: "about" */ "../views/Commands.vue"),
-    meta: {
-      title: "Commands | RTByte"
-    }
+    meta: { title: "Commands | RTByte" }
   },
   {
     path: "/faq",
     name: "F.A.Q.",
     component: () => import(/* webpackChunkName: "about" */ "../views/FAQ.vue"),
-    meta: {
-      title: "F.A.Q. | RTByte"
-    }
+    meta: { title: "F.A.Q. | RTByte" }
   },
   {
     path: "/about",
     name: "About",
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
     component: () =>
       import(/* webpackChunkName: "about" */ "../views/About.vue"),
-    meta: {
-      title: "About us | RTByte"
-    }
+    meta: { title: "About us | RTByte" }
   }
 ];
 

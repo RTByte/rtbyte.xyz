@@ -61,7 +61,7 @@
             </router-link>
           </li>
           <li>
-            <a href="#" @click="mobileMenu()">
+            <a href="#" @click="toggleMobileMenu()">
               <font-awesome-icon :icon="['fad', 'bars']" class="header-menu" />
             </a>
           </li>
@@ -93,8 +93,8 @@
 export default {
   name: "Header",
   methods: {
-    mobileMenu() {
-      this.$emit("mobileMenu");
+    toggleMobileMenu() {
+      this.$store.commit("toggleMobileMenu");
     }
   }
 };

@@ -1,6 +1,6 @@
 <template>
   <ul id="mobile-menu" class="mobile-menu nav-container mobile-menu-inactive">
-    <a href="#" @click="mobileMenu()">
+    <a href="#" @click="toggleMobileMenu()">
       <font-awesome-icon
         :icon="['fas', 'times']"
         class="close-btn mobile-menu-close"
@@ -17,7 +17,7 @@
     </li>
     <li>
       <router-link to="/commands" class="mobile-menu-item">
-        <span @click="mobileMenu()">COMMANDS</span>
+        <span @click="toggleMobileMenu()">COMMANDS</span>
       </router-link>
     </li>
     <li>
@@ -36,8 +36,8 @@
       <a class="mobile-menu-item" href="/discord" target="_blank">DISCORD</a>
     </li>
     <li>
-      <router-link to="/faq" class="mobile-menu-item" @click="mobileMenu()">
-        <span @click="mobileMenu()">F.A.Q.</span>
+      <router-link to="/faq" class="mobile-menu-item">
+        <span @click="toggleMobileMenu()">F.A.Q.</span>
       </router-link>
     </li>
     <li>
@@ -51,7 +51,7 @@
     </li>
     <li>
       <router-link to="/about" class="mobile-menu-item">
-        <span @click="mobileMenu()">ABOUT US</span>
+        <span @click="toggleMobileMenu()">ABOUT US</span>
       </router-link>
     </li>
     <li>
@@ -64,8 +64,8 @@
 export default {
   name: "MobileMenu",
   methods: {
-    mobileMenu() {
-      this.$emit("mobileMenu");
+    toggleMobileMenu() {
+      this.$store.commit("toggleMobileMenu");
     }
   }
 };

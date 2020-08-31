@@ -238,9 +238,9 @@
         </p>
       </div>
       <div class="content-container">
-        <h2><a href="http://mokkaquillart.tumblr.com/">MokkaQuill</a></h2>
+        <h2><a href="https://twitter.com/ArtsyDiego">ArtsyDiego</a></h2>
         <p class="content-text">
-          Thanks to MokkaQuill for providing us with our logo.
+          Thanks to ArtsyDiego for providing us with our logo.
         </p>
       </div>
     </div>

@@ -1,11 +1,8 @@
 <template>
   <div id="app">
-    <Header @mobileMenu="mobileMenu = !mobileMenu"></Header>
+    <Header></Header>
     <transition name="fade">
-      <MobileMenu
-        @mobileMenu="mobileMenu = !mobileMenu"
-        v-if="mobileMenu"
-      ></MobileMenu>
+      <MobileMenu v-if="mobileMenu"></MobileMenu>
     </transition>
     <router-view />
   </div>
@@ -17,10 +14,10 @@ import MobileMenu from "@/components/MobileMenu.vue";
 
 export default {
   name: "App",
-  data: function() {
-    return {
-      mobileMenu: false
-    };
+  computed: {
+    mobileMenu() {
+      return this.$store.state.mobileMenu;
+    }
   },
   components: {
     Header,
@@ -131,6 +128,7 @@ body {
   color: var(--text-main);
   background-color: var(--body-bg-dark);
   background-image: url(./assets/bg.svg);
+  background-attachment: fixed;
   font-family: "Roboto", sans-serif;
 }
 
