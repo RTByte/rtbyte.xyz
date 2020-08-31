@@ -1,11 +1,11 @@
 <template>
   <div class="hero">
     <div class="hero-content">
-      <img
+      <object
+        type="image/svg+xml"
+        data="static/rtbyte-text-light-horizontal.svg"
         class="hero-img"
-        src="@/assets/rtbyte-flat-colored-light-text-horizontal.svg"
-        alt="RTByte logo with text"
-      />
+      ></object>
       <p class="hero-desc">Your one-stop-shop for Discord server moderation.</p>
       <div class="buttons">
         <a class="btn hero-btn" href="/discord" target="_blank">
@@ -50,6 +50,10 @@ export default {
   font-family: "Sen", sans-serif;
   width: 50rem;
   margin: 2rem;
+}
+
+.hero-img text {
+  
 }
 
 .hero-desc {
