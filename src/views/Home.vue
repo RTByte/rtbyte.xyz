@@ -48,12 +48,11 @@ export default {
 
 .hero-img {
   font-family: "Sen", sans-serif;
-  width: 50rem;
+  max-width: 50rem;
   margin: 2rem;
 }
 
 .hero-img text {
-  
 }
 
 .hero-desc {
