@@ -56,7 +56,6 @@ library.add(
   faInstagram
 );
 
-Vue.use(VueAxios, axios);
 Vue.component("font-awesome-icon", FontAwesomeIcon);
 Vue.prototype.$analytics = firebase.analytics();
 
