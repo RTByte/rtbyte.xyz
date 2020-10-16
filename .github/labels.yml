@@ -86,7 +86,7 @@
   description: Issues and PRs related to the maintenance of a feature or function.
   color: 0075c1
 - name: 'Type: Proposal'
-  description: Issues that request a new feature or a change to the bot.
+  description: Issues that request a new feature or a change to the site.
   color: ffffff
 - name: 'Type: Question'
   description: Issues that do not belong in the issue tracker and should be asked in https://rtbyte.xyz/discord.
