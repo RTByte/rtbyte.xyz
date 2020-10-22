@@ -18,13 +18,6 @@
         </p>
       </div>
       <div class="cmd-line">
-        <p class="cmd-cmd">call</p>
-        <p class="cmd-desc">
-          Generates a video chat link for use in servers.
-        </p>
-        <p class="cmd-usage"><code class="code-inline">-call</code></p>
-      </div>
-      <div class="cmd-line">
         <p class="cmd-cmd">choice</p>
         <p class="cmd-desc">
           Makes a decision based off of the choices given.

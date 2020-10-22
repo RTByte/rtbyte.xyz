@@ -9,6 +9,20 @@
     </div>
     <div class="cmd-container">
       <div class="cmd-line">
+        <p class="cmd-cmd">autoresponder</p>
+        <p class="cmd-desc">
+          A series of commands to let you manage automatic responses for
+          keywords and phrases.
+        </p>
+        <p class="cmd-usage">
+          <code class="code-inline"
+            >-autoresponder
+            &lt;enable/disable/create/delete/update/set/remove/reset/show&gt;
+            (keyword or phrase) (response)</code
+          >
+        </p>
+      </div>
+      <div class="cmd-line">
         <p class="cmd-cmd">customcmds</p>
         <p class="cmd-desc">
           A series of commands to let you manage your custom commands.
@@ -107,6 +121,19 @@
           <code class="code-inline"
             >-starboard &lt;enable/disable/set/remove/reset/show&gt; (setting)
             (value)</code
+          >
+        </p>
+      </div>
+      <div class="cmd-line">
+        <p class="cmd-cmd">twitchnotifs</p>
+        <p class="cmd-desc">
+          A series of commands to let you modify the Twitch.tv notifications for
+          your server.
+        </p>
+        <p class="cmd-usage">
+          <code class="code-inline"
+            >-twitchnotifs &lt;enable/disable/set/remove/reset/show&gt;
+            (setting) (value)</code
           >
         </p>
       </div>
