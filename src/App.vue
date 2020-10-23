@@ -237,6 +237,7 @@ code {
   background: var(--main-bg-dark);
   padding: 0.2rem;
   border-radius: 5px;
+  word-break: break-word;
 }
 
 pre {
