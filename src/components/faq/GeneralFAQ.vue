@@ -5,9 +5,9 @@
         <h2 class="question">How do I get started with RTByte?</h2>
         <p class="content-text">
           To get started with RTByte, simply click the
-          <b>Add RTByte</b> button in the upper right corner of this page. Once
-          RTByte has been invited to your server, it will automatically set up
-          the following items.
+          <span class="highlighted">Add RTByte</span> button in the upper right
+          corner of this page. Once RTByte has been invited to your server, it
+          will automatically set up the following items.
         </p>
         <ul>
           <li class="content-text">An administrator role</li>
@@ -33,10 +33,9 @@
         </h2>
         <p class="content-text">
           Yes you can! Make sure you've reconfigured the bot to use your already
-          existing roles using the
-          <code class="code-inline">conf</code> command first, however. For
-          instructions on how to use the
-          <code class="code-inline">conf</code> command, please see the
+          existing roles using the various
+          <span class="highlighted">management commands</span> first, however.
+          For instructions on how to use them, please see the
           <a @click="configSelector()" href="#/configuration">Configuration</a>
           category.
         </p>
@@ -78,9 +77,8 @@
         <h2 class="question">How can I contribute to the project?</h2>
         <p class="content-text">
           Of course! We'd love it if you were able to contribute to the project
-          in any way you'd like - whether that's through helping with
-          development, design, testing, translating, or even just helping others
-          in our
+          in any way you'd like — whether that's through development, design,
+          testing, translating, or even just helping others in our
           <a href="/discord" target="_blank">support server</a>.
         </p>
         <p class="content-text">
