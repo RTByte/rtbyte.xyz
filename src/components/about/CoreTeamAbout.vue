@@ -62,64 +62,6 @@
       <div class="team-member">
         <img
           class="team-member-pic"
-          src="@/assets/contributors/michaelcumbers.jpg"
-        />
-        <div class="team-member-details">
-          <div class="about">
-            <h2>Michael Cumbers</h2>
-            <span class="about-label">DEVELOPER</span>
-          </div>
-          <div class="links">
-            <a
-              class="about-link"
-              href="mailto:michael@rtbyte.xyz"
-              target="_blank"
-            >
-              <font-awesome-icon
-                :icon="['fas', 'envelope']"
-                transform="shrink-6"
-                :mask="['fas', 'square']"
-              />
-            </a>
-            <a
-              class="about-link"
-              href="https://michaelcumbers.ca/"
-              target="_blank"
-            >
-              <font-awesome-icon
-                :icon="['fas', 'globe']"
-                transform="shrink-6"
-                :mask="['fas', 'square']"
-              />
-            </a>
-            <a
-              class="about-link"
-              href="https://github.com/mcumbers/"
-              target="_blank"
-            >
-              <font-awesome-icon
-                :icon="['fab', 'github']"
-                transform="shrink-6"
-                :mask="['fas', 'square']"
-              />
-            </a>
-            <a
-              class="about-link"
-              href="https://twitter.com/stickmanmeyhem"
-              target="_blank"
-            >
-              <font-awesome-icon
-                :icon="['fab', 'twitter']"
-                transform="shrink-6"
-                :mask="['fas', 'square']"
-              />
-            </a>
-          </div>
-        </div>
-      </div>
-      <div class="team-member">
-        <img
-          class="team-member-pic"
           src="@/assets/contributors/killianhiggins.jpg"
         />
         <div class="team-member-details">
@@ -178,6 +120,96 @@
       <div class="team-member">
         <img
           class="team-member-pic"
+          src="@/assets/contributors/inesrosito.jpg"
+        />
+        <div class="team-member-details">
+          <div class="about">
+            <h2>Ines Rosito</h2>
+            <span class="about-label">DEVELOPER</span>
+          </div>
+          <div class="links">
+            <a class="about-link" href="mailto:ines@rtbyte.xyz" target="_blank">
+              <font-awesome-icon
+                :icon="['fas', 'envelope']"
+                transform="shrink-6"
+                :mask="['fas', 'square']"
+              />
+            </a>
+            <a
+              class="about-link"
+              href="https://github.com/PixelPoncho"
+              target="_blank"
+            >
+              <font-awesome-icon
+                :icon="['fab', 'github']"
+                transform="shrink-6"
+                :mask="['fas', 'square']"
+              />
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="team-member">
+        <img
+          class="team-member-pic"
+          src="@/assets/contributors/michaelcumbers.jpg"
+        />
+        <div class="team-member-details">
+          <div class="about">
+            <h2>Michael Cumbers</h2>
+            <span class="about-label">DEVELOPER</span>
+          </div>
+          <div class="links">
+            <a
+              class="about-link"
+              href="mailto:michael@rtbyte.xyz"
+              target="_blank"
+            >
+              <font-awesome-icon
+                :icon="['fas', 'envelope']"
+                transform="shrink-6"
+                :mask="['fas', 'square']"
+              />
+            </a>
+            <a
+              class="about-link"
+              href="https://michaelcumbers.ca/"
+              target="_blank"
+            >
+              <font-awesome-icon
+                :icon="['fas', 'globe']"
+                transform="shrink-6"
+                :mask="['fas', 'square']"
+              />
+            </a>
+            <a
+              class="about-link"
+              href="https://github.com/mcumbers/"
+              target="_blank"
+            >
+              <font-awesome-icon
+                :icon="['fab', 'github']"
+                transform="shrink-6"
+                :mask="['fas', 'square']"
+              />
+            </a>
+            <a
+              class="about-link"
+              href="https://twitter.com/stickmanmeyhem"
+              target="_blank"
+            >
+              <font-awesome-icon
+                :icon="['fab', 'twitter']"
+                transform="shrink-6"
+                :mask="['fas', 'square']"
+              />
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="team-member">
+        <img
+          class="team-member-pic"
           src="@/assets/contributors/justinshull.jpg"
         />
         <div class="team-member-details">
@@ -215,8 +247,8 @@
     <div class="content-wrapper">
       <div class="content-container">
         <h2>
-          <a href="https://github.com/bdistin">AoDude</a>,
-          <a href="https://github.com/kyranet">Kyra</a>, and
+          <a href="https://github.com/kyranet">Kyra</a>,
+          <a href="https://github.com/vladfrangu">Vlad</a>, and
           <a href="https://github.com/dirigeants"
             >everyone else at Dirigeants</a
           >
