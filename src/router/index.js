@@ -15,21 +15,90 @@ const routes = [
     path: "/commands",
     name: "Commands",
     component: () =>
-      import(/* webpackChunkName: "about" */ "../views/Commands.vue"),
-    meta: { title: "Commands | RTByte" }
+      import(/* webpackChunkName: "commands" */ "../views/Commands.vue"),
+    meta: { title: "Commands | RTByte" },
+    children: [
+      { path: "", redirect: "user" },
+      {
+        path: "user",
+        component: () =>
+          import(
+            /* webpackChunkName: "commands" */ "../views/commands/UserCommands.vue"
+          ),
+        meta: { title: "Commands | RTByte" }
+      },
+      {
+        path: "moderator",
+        component: () =>
+          import(
+            /* webpackChunkName: "commands" */ "../views/commands/ModCommands.vue"
+          ),
+        meta: { title: "Commands | RTByte" }
+      },
+      {
+        path: "management",
+        component: () =>
+          import(
+            /* webpackChunkName: "commands" */ "../views/commands/MgmtCommands.vue"
+          ),
+        meta: { title: "Commands | RTByte" }
+      },
+      {
+        path: "developer",
+        component: () =>
+          import(
+            /* webpackChunkName: "commands" */ "../views/commands/DevCommands.vue"
+          ),
+        meta: { title: "Commands | RTByte" }
+      }
+    ]
   },
   {
     path: "/faq",
     name: "F.A.Q.",
-    component: () => import(/* webpackChunkName: "about" */ "../views/FAQ.vue"),
-    meta: { title: "F.A.Q. | RTByte" }
+    component: () => import(/* webpackChunkName: "faq" */ "../views/FAQ.vue"),
+    meta: { title: "F.A.Q. | RTByte" },
+    children: [
+      { path: "", redirect: "general" },
+      {
+        path: "general",
+        component: () =>
+          import(/* webpackChunkName: "faq" */ "../views/faq/GeneralFAQ.vue"),
+        meta: { title: "F.A.Q. | RTByte" }
+      },
+      {
+        path: "configuration",
+        component: () =>
+          import(/* webpackChunkName: "faq" */ "../views/faq/ConfigFAQ.vue"),
+        meta: { title: "F.A.Q. | RTByte" }
+      }
+    ]
   },
   {
     path: "/about",
     name: "About",
     component: () =>
       import(/* webpackChunkName: "about" */ "../views/About.vue"),
-    meta: { title: "About us | RTByte" }
+    meta: { title: "About us | RTByte" },
+    children: [
+      { path: "", redirect: "core-team" },
+      {
+        path: "core-team",
+        component: () =>
+          import(
+            /* webpackChunkName: "about" */ "../views/about/CoreTeamAbout.vue"
+          ),
+        meta: { title: "About us | RTByte" }
+      },
+      {
+        path: "sponsors",
+        component: () =>
+          import(
+            /* webpackChunkName: "about" */ "../views/about/SponsorAbout.vue"
+          ),
+        meta: { title: "About us | RTByte" }
+      }
+    ]
   }
 ];
 

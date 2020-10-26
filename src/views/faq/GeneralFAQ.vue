@@ -36,7 +36,7 @@
           existing roles using the various
           <span class="highlighted">management commands</span> first, however.
           For instructions on how to use them, please see the
-          <a @click="configSelector()" href="#/configuration">Configuration</a>
+          <router-link to="/faq/configuration">Configuration</router-link>
           category.
         </p>
       </div>

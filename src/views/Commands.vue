@@ -8,89 +8,21 @@
         </div>
         <aside class="menu">
           <ul class="menu-list">
-            <a
-              @click="userSelector()"
-              v-bind:class="{ 'is-active': userShow }"
-              href="#/user"
-              >User</a
-            >
-            <a
-              @click="modSelector()"
-              v-bind:class="{ 'is-active': modShow }"
-              href="#/moderator"
-              >Moderator</a
-            >
-            <a
-              @click="mgmtSelector()"
-              v-bind:class="{ 'is-active': mgmtShow }"
-              href="#/management"
-              >Management</a
-            >
-            <a
-              @click="devSelector()"
-              v-bind:class="{ 'is-active': devShow }"
-              href="#/developer"
-              >Developer</a
-            >
+            <router-link to="/commands/user">User</router-link>
+            <router-link to="/commands/moderator">Moderator</router-link>
+            <router-link to="/commands/management">Management</router-link>
+            <router-link to="/commands/developer">Developer</router-link>
           </ul>
         </aside>
       </div>
-      <UserCommands v-if="userShow"></UserCommands>
-      <ModCommands v-if="modShow"></ModCommands>
-      <MgmtCommands v-if="mgmtShow"></MgmtCommands>
-      <DevCommands v-if="devShow"></DevCommands>
+      <router-view />
     </div>
   </main>
 </template>
 
 <script>
-import UserCommands from "@/components/commands/UserCommands.vue";
-import ModCommands from "@/components/commands/ModCommands.vue";
-import MgmtCommands from "@/components/commands/MgmtCommands.vue";
-import DevCommands from "@/components/commands/DevCommands.vue";
-
 export default {
-  name: "Commands",
-  components: {
-    UserCommands,
-    ModCommands,
-    MgmtCommands,
-    DevCommands
-  },
-  data: function() {
-    return {
-      userShow: true,
-      modShow: false,
-      mgmtShow: false,
-      devShow: false
-    };
-  },
-  methods: {
-    userSelector() {
-      this.$data.userShow = true;
-      this.$data.modShow = false;
-      this.$data.mgmtShow = false;
-      this.$data.devShow = false;
-    },
-    modSelector() {
-      this.$data.userShow = false;
-      this.$data.modShow = true;
-      this.$data.mgmtShow = false;
-      this.$data.devShow = false;
-    },
-    mgmtSelector() {
-      this.$data.userShow = false;
-      this.$data.modShow = false;
-      this.$data.mgmtShow = true;
-      this.$data.devShow = false;
-    },
-    devSelector() {
-      this.$data.userShow = false;
-      this.$data.modShow = false;
-      this.$data.mgmtShow = false;
-      this.$data.devShow = true;
-    }
-  }
+  name: "Commands"
 };
 </script>
 
