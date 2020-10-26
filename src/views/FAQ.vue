@@ -8,53 +8,19 @@
         </div>
         <aside class="menu">
           <ul class="menu-list">
-            <a
-              @click="generalSelector()"
-              v-bind:class="{ 'is-active': generalShow }"
-              href="#/general"
-              >General</a
-            >
-            <a
-              @click="configSelector()"
-              v-bind:class="{ 'is-active': configShow }"
-              href="#/configuration"
-              >Configuration</a
-            >
+            <router-link to="/faq/general">General</router-link>
+            <router-link to="/faq/configuration">Configuration</router-link>
           </ul>
         </aside>
       </div>
-      <GeneralFAQ v-if="generalShow"></GeneralFAQ>
-      <ConfigFAQ v-if="configShow"></ConfigFAQ>
+      <router-view />
     </div>
   </main>
 </template>
 
 <script>
-import GeneralFAQ from "@/components/faq/GeneralFAQ.vue";
-import ConfigFAQ from "@/components/faq/ConfigFAQ.vue";
-
 export default {
-  name: "FAQ",
-  components: {
-    GeneralFAQ,
-    ConfigFAQ
-  },
-  data: function() {
-    return {
-      generalShow: true,
-      configShow: false
-    };
-  },
-  methods: {
-    generalSelector() {
-      this.$data.generalShow = true;
-      this.$data.configShow = false;
-    },
-    configSelector() {
-      this.$data.generalShow = false;
-      this.$data.configShow = true;
-    }
-  }
+  name: "FAQ"
 };
 </script>
 

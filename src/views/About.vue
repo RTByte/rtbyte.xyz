@@ -8,55 +8,23 @@
         </div>
         <aside class="menu">
           <ul class="menu-list">
-            <a
-              @click="coreTeamSelector()"
-              v-bind:class="{ 'is-active': coreTeamShow }"
-              href="#/core-team"
-            >
+            <router-link to="/about/core-team">
               Core team & shout-outs
-            </a>
-            <a
-              @click="sponsorSelector()"
-              v-bind:class="{ 'is-active': sponsorShow }"
-              href="#/sponsors"
-            >
+            </router-link>
+            <router-link to="/about/sponsors">
               Project sponsors
-            </a>
+            </router-link>
           </ul>
         </aside>
       </div>
-      <CoreTeamAbout v-if="coreTeamShow"></CoreTeamAbout>
-      <SponsorAbout v-if="sponsorShow"></SponsorAbout>
+      <router-view />
     </div>
   </main>
 </template>
 
 <script>
-import CoreTeamAbout from "@/components/about/CoreTeamAbout.vue";
-import SponsorAbout from "@/components/about/SponsorAbout.vue";
-
 export default {
-  name: "About",
-  components: {
-    CoreTeamAbout,
-    SponsorAbout
-  },
-  data: function() {
-    return {
-      coreTeamShow: true,
-      sponsorShow: false
-    };
-  },
-  methods: {
-    coreTeamSelector() {
-      this.$data.coreTeamShow = true;
-      this.$data.sponsorShow = false;
-    },
-    sponsorSelector() {
-      this.$data.coreTeamShow = false;
-      this.$data.sponsorShow = true;
-    }
-  }
+  name: "About"
 };
 </script>
 

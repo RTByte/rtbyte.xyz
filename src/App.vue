@@ -287,11 +287,11 @@ main a {
   border-radius: 5px;
 }
 
-.menu-list a:not(.is-active):hover {
+.menu-list a:not(.router-link-active):hover {
   background: var(--item-bg-dark);
 }
 
-.is-active {
+.menu-list .router-link-active {
   background: var(--accent);
 }
 
