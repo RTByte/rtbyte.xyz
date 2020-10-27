@@ -21,7 +21,9 @@
       </router-link>
     </li>
     <li>
-      <a class="mobile-menu-item" href="/github" target="_blank">GITHUB</a>
+      <a class="mobile-menu-item" href="/github" target="_blank"
+        >GITHUB <font-awesome-icon :icon="['fad', 'external-link']"
+      /></a>
     </li>
     <li>
       <a
@@ -29,11 +31,13 @@
         href="https://translate.rtbyte.xyz/"
         target="_blank"
       >
-        TRANSLATE
+        TRANSLATE <font-awesome-icon :icon="['fad', 'external-link']" />
       </a>
     </li>
     <li>
-      <a class="mobile-menu-item" href="/discord" target="_blank">DISCORD</a>
+      <a class="mobile-menu-item" href="/discord" target="_blank"
+        >DISCORD <font-awesome-icon :icon="['fad', 'external-link']"
+      /></a>
     </li>
     <li>
       <router-link to="/faq" class="mobile-menu-item">
@@ -46,7 +50,7 @@
         href="https://status.rtbyte.xyz/"
         target="_blank"
       >
-        STATUS
+        STATUS <font-awesome-icon :icon="['fad', 'external-link']" />
       </a>
     </li>
     <li>
@@ -55,7 +59,9 @@
       </router-link>
     </li>
     <li>
-      <a class="mobile-menu-item" href="/donate" target="_blank">DONATE</a>
+      <a class="mobile-menu-item" href="/donate" target="_blank"
+        >DONATE <font-awesome-icon :icon="['fad', 'external-link']"
+      /></a>
     </li>
   </ul>
 </template>

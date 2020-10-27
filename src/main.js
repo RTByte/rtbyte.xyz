@@ -21,7 +21,7 @@ import {
   faInstagram,
   faDev
 } from "@fortawesome/free-brands-svg-icons";
-import { faBars } from "@fortawesome/pro-duotone-svg-icons";
+import { faBars, faExternalLink } from "@fortawesome/pro-duotone-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
 
 Sentry.init({
@@ -56,6 +56,7 @@ library.add(
   faTwitter,
   faInstagram,
   faDev,
+  faExternalLink
 );
 
 Vue.component("font-awesome-icon", FontAwesomeIcon);

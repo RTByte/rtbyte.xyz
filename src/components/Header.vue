@@ -20,11 +20,14 @@
             </a>
             <ul class="nav-dropdown" aria-label="submenu">
               <li class="dropdown-item">
-                <a href="/github" target="_blank">GITHUB</a>
+                <a href="/github" target="_blank"
+                  >GITHUB <font-awesome-icon :icon="['fad', 'external-link']"
+                /></a>
               </li>
               <li class="dropdown-item">
                 <a href="https://translate.rtbyte.xyz/" target="_blank">
                   TRANSLATE
+                  <font-awesome-icon :icon="['fad', 'external-link']" />
                 </a>
               </li>
             </ul>
@@ -36,13 +39,17 @@
             </a>
             <ul class="nav-dropdown" aria-label="submenu">
               <li class="dropdown-item">
-                <a href="/discord" target="_balnk">DISCORD</a>
+                <a href="/discord" target="_balnk"
+                  >DISCORD <font-awesome-icon :icon="['fad', 'external-link']"
+                /></a>
               </li>
               <li class="dropdown-item">
                 <router-link to="/faq">F.A.Q.</router-link>
               </li>
               <li class="dropdown-item">
-                <a href="https://status.rtbyte.xyz/" target="_blank">STATUS</a>
+                <a href="https://status.rtbyte.xyz/" target="_blank"
+                  >STATUS <font-awesome-icon :icon="['fad', 'external-link']"
+                /></a>
               </li>
             </ul>
           </li>
@@ -130,8 +137,8 @@ header li {
   white-space: nowrap;
 }
 
-header i {
-  font-size: 0.9rem;
+header svg {
+  margin-left: 2px;
 }
 
 .header-container {
@@ -191,6 +198,10 @@ header i {
 
 .has-dropdown:hover svg {
   transform: rotate(-180deg);
+}
+
+.has-dropdown:hover .dropdown-item svg {
+  transform: none;
 }
 
 .header-btn {
