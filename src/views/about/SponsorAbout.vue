@@ -132,7 +132,7 @@
             <span class="about-label sponsor-label">ICON SET AND TOOLKIT</span>
             <p>
               We use
-              <a href="https://firebase.google.com" target="_blank"
+              <a href="https://fontawesome.com/" target="_blank"
                 >Font Awesome</a
               >
               Pro for the icons used across all our services. We are a paying
@@ -159,11 +159,7 @@
             >
             <p>
               We use
-              <a
-                href="https://www.atlassian.com/software/statuspage"
-                target="_blank"
-                >Sentry</a
-              >
+              <a href="https://sentry.io/" target="_blank">Sentry</a>
               to more easily track errors so that we can diagnose and fix them
               as soon as possible. We've been granted an open-source license by
               Sentry.
