@@ -3,7 +3,7 @@
     <div class="hero-content">
       <object
         type="image/svg+xml"
-        data="static/rtbyte-text-light-horizontal.svg"
+        data="/static/rtbyte-text-light-horizontal.svg"
         class="hero-img"
       ></object>
       <p class="hero-desc">Your one-stop-shop for Discord server moderation.</p>
