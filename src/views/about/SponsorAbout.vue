@@ -129,7 +129,7 @@
                 class="sponsor-title sponsor-icon"
               />
             </div>
-            <span class="about-label sponsor-label">ICON SET AND TOOLKIT</span>
+            <span class="about-label sponsor-label">ICON SET & TOOLKIT</span>
             <p>
               We use
               <a href="https://fontawesome.com/" target="_blank"
