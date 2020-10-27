@@ -10,7 +10,7 @@
       <router-link to="/">
         <img
           class="header-img"
-          src="static/rtbyte-logo-light.svg"
+          src="/static/rtbyte-logo-light.svg"
           alt="RTByte logo"
         />
       </router-link>
