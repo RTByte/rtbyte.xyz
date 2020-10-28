@@ -1,243 +1,29 @@
 <template>
   <div class="page-content">
     <div class="content-wrapper about-wrapper">
-      <div class="team-member">
-        <img
-          class="team-member-pic"
-          src="@/assets/contributors/rasmusgerdin.jpg"
-        />
+      <div
+        v-for="teamMember in coreTeam"
+        :key="teamMember.name"
+        class="team-member"
+      >
+        <img class="team-member-pic" :src="teamMember.image" />
         <div class="team-member-details">
           <div class="about">
-            <h2>Rasmus Gerdin</h2>
-            <span class="about-label">DEVELOPER, PROJECT LEAD</span>
+            <h2>{{ teamMember.name }}</h2>
+            <span class="about-label">{{ teamMember.title }}</span>
           </div>
           <div class="links">
             <a
+              v-for="link in teamMember.links"
+              :key="link.url"
               class="about-link"
-              href="mailto:rasmus@rtbyte.xyz"
+              :href="link.url"
               target="_blank"
             >
               <font-awesome-icon
-                :icon="['fas', 'envelope']"
-                transform="shrink-6"
-                :mask="['fas', 'square']"
-              />
-            </a>
-            <a
-              class="about-link"
-              href="https://rasmusgerdin.com/"
-              target="_blank"
-            >
-              <font-awesome-icon
-                :icon="['fas', 'globe']"
-                transform="shrink-6"
-                :mask="['fas', 'square']"
-              />
-            </a>
-            <a
-              class="about-link"
-              href="https://github.com/rasmusgerdin"
-              target="_blank"
-            >
-              <font-awesome-icon
-                :icon="['fab', 'github']"
-                transform="shrink-6"
-                :mask="['fas', 'square']"
-              />
-            </a>
-            <a
-              class="about-link"
-              href="https://twitter.com/rasmusgerdin_"
-              target="_blank"
-            >
-              <font-awesome-icon
-                :icon="['fab', 'twitter']"
-                transform="shrink-6"
-                :mask="['fas', 'square']"
-              />
-            </a>
-          </div>
-        </div>
-      </div>
-      <div class="team-member">
-        <img
-          class="team-member-pic"
-          src="@/assets/contributors/killianhiggins.jpg"
-        />
-        <div class="team-member-details">
-          <div class="about">
-            <h2>Killian Higgins</h2>
-            <span class="about-label">DEVELOPER</span>
-          </div>
-          <div class="links">
-            <a
-              class="about-link"
-              href="mailto:killian@rtbyte.xyz"
-              target="_blank"
-            >
-              <font-awesome-icon
-                :icon="['fas', 'envelope']"
-                transform="shrink-6"
-                :mask="['fas', 'square']"
-              />
-            </a>
-            <a
-              class="about-link"
-              href="https://github.com/Uzui2012"
-              target="_blank"
-            >
-              <font-awesome-icon
-                :icon="['fab', 'github']"
-                transform="shrink-6"
-                :mask="['fas', 'square']"
-              />
-            </a>
-            <a
-              class="about-link"
-              href="https://twitter.com/Uzui2012"
-              target="_blank"
-            >
-              <font-awesome-icon
-                :icon="['fab', 'twitter']"
-                transform="shrink-6"
-                :mask="['fas', 'square']"
-              />
-            </a>
-            <a
-              class="about-link"
-              href="https://www.instagram.com/killian2291/"
-              target="_blank"
-            >
-              <font-awesome-icon
-                :icon="['fab', 'instagram']"
-                transform="shrink-6"
-                :mask="['fas', 'square']"
-              />
-            </a>
-          </div>
-        </div>
-      </div>
-      <div class="team-member">
-        <img
-          class="team-member-pic"
-          src="@/assets/contributors/inesrosito.jpg"
-        />
-        <div class="team-member-details">
-          <div class="about">
-            <h2>Ines Rosito</h2>
-            <span class="about-label">DEVELOPER</span>
-          </div>
-          <div class="links">
-            <a class="about-link" href="mailto:ines@rtbyte.xyz" target="_blank">
-              <font-awesome-icon
-                :icon="['fas', 'envelope']"
-                transform="shrink-6"
-                :mask="['fas', 'square']"
-              />
-            </a>
-            <a
-              class="about-link"
-              href="https://github.com/PixelPoncho"
-              target="_blank"
-            >
-              <font-awesome-icon
-                :icon="['fab', 'github']"
-                transform="shrink-6"
-                :mask="['fas', 'square']"
-              />
-            </a>
-          </div>
-        </div>
-      </div>
-      <div class="team-member">
-        <img
-          class="team-member-pic"
-          src="@/assets/contributors/michaelcumbers.jpg"
-        />
-        <div class="team-member-details">
-          <div class="about">
-            <h2>Michael Cumbers</h2>
-            <span class="about-label">DEVELOPER</span>
-          </div>
-          <div class="links">
-            <a
-              class="about-link"
-              href="mailto:michael@rtbyte.xyz"
-              target="_blank"
-            >
-              <font-awesome-icon
-                :icon="['fas', 'envelope']"
-                transform="shrink-6"
-                :mask="['fas', 'square']"
-              />
-            </a>
-            <a
-              class="about-link"
-              href="https://michaelcumbers.ca/"
-              target="_blank"
-            >
-              <font-awesome-icon
-                :icon="['fas', 'globe']"
-                transform="shrink-6"
-                :mask="['fas', 'square']"
-              />
-            </a>
-            <a
-              class="about-link"
-              href="https://github.com/mcumbers/"
-              target="_blank"
-            >
-              <font-awesome-icon
-                :icon="['fab', 'github']"
-                transform="shrink-6"
-                :mask="['fas', 'square']"
-              />
-            </a>
-            <a
-              class="about-link"
-              href="https://twitter.com/stickmanmeyhem"
-              target="_blank"
-            >
-              <font-awesome-icon
-                :icon="['fab', 'twitter']"
-                transform="shrink-6"
-                :mask="['fas', 'square']"
-              />
-            </a>
-          </div>
-        </div>
-      </div>
-      <div class="team-member">
-        <img
-          class="team-member-pic"
-          src="@/assets/contributors/justinshull.jpg"
-        />
-        <div class="team-member-details">
-          <div class="about">
-            <h2>Justin Shull</h2>
-            <span class="about-label">DEVELOPER</span>
-          </div>
-          <div class="links">
-            <a
-              class="about-link"
-              href="mailto:justin@rtbyte.xyz"
-              target="_blank"
-            >
-              <font-awesome-icon
-                :icon="['fas', 'envelope']"
-                transform="shrink-6"
-                :mask="['fas', 'square']"
-              />
-            </a>
-            <a
-              class="about-link"
-              href="https://github.com/JShull97"
-              target="_blank"
-            >
-              <font-awesome-icon
-                :icon="['fab', 'github']"
-                transform="shrink-6"
-                :mask="['fas', 'square']"
+                :icon="[`${link.icon.style}`, `${link.icon.icon}`]"
+                :transform="link.icon.mask ? 'shrink-6' : ''"
+                :mask="link.icon.mask ? ['fas', 'square'] : ''"
               />
             </a>
           </div>
@@ -281,6 +67,11 @@
 
 <script>
 export default {
-  name: "CoreTeamAbout"
+  name: "CoreTeamAbout",
+  computed: {
+    coreTeam() {
+      return this.$store.state.coreTeam;
+    }
+  }
 };
 </script>

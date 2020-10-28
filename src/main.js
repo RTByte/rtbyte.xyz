@@ -18,9 +18,15 @@ import {
 import {
   faGithub,
   faTwitter,
-  faInstagram
+  faInstagram,
+  faDev
 } from "@fortawesome/free-brands-svg-icons";
-import { faBars } from "@fortawesome/pro-duotone-svg-icons";
+import {
+  faBars,
+  faExternalLink,
+  faHandHoldingHeart,
+  faHandHoldingUsd
+} from "@fortawesome/pro-duotone-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
 
 Sentry.init({
@@ -53,7 +59,11 @@ library.add(
   faGlobe,
   faGithub,
   faTwitter,
-  faInstagram
+  faInstagram,
+  faDev,
+  faExternalLink,
+  faHandHoldingHeart,
+  faHandHoldingUsd
 );
 
 Vue.component("font-awesome-icon", FontAwesomeIcon);

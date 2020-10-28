@@ -311,7 +311,7 @@ main a {
   }
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 825px) {
   .page-wrapper {
     flex-flow: column;
     align-items: center;

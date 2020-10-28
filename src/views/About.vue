@@ -12,7 +12,7 @@
               Core team & shout-outs
             </router-link>
             <router-link to="/about/sponsors">
-              Project sponsors
+              Sponsors & usage
             </router-link>
           </ul>
         </aside>
@@ -95,8 +95,20 @@ div >>> .sponsor-details {
   flex-flow: column;
 }
 
+div >>> .title-container {
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
 div >>> .sponsor-title {
   font-size: 2rem;
+}
+
+div >>> .title-container a {
+  margin-left: 8px;
+  color: var(--text-main);
 }
 
 div >>> .sponsor-label {
@@ -115,7 +127,9 @@ div >>> .sponsor-label {
 }
 
 .page-content >>> .about-link:hover,
-.page-content >>> .about-link:focus {
+.page-content >>> .about-link:focus,
+div >>> .title-container a:hover,
+div >>> .title-container a:focus {
   color: var(--text-dimmed);
 }
 
@@ -123,7 +137,16 @@ div >>> .sponsor-label {
   padding: 1rem;
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 850px) {
+  div >>> .sponsor {
+    padding: 0.5rem;
+  }
+  div >>> .sponsor-img {
+    margin-right: 1.5rem;
+  }
+}
+
+@media only screen and (max-width: 540px) {
   .page-content >>> .team-member {
     flex-flow: column;
     min-width: auto;
