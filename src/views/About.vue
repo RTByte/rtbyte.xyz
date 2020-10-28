@@ -106,8 +106,9 @@ div >>> .sponsor-title {
   font-size: 2rem;
 }
 
-div >>> .sponsor-icon {
+div >>> .title-container a {
   margin-left: 8px;
+  color: var(--text-main);
 }
 
 div >>> .sponsor-label {
@@ -126,7 +127,9 @@ div >>> .sponsor-label {
 }
 
 .page-content >>> .about-link:hover,
-.page-content >>> .about-link:focus {
+.page-content >>> .about-link:focus,
+div >>> .title-container a:hover,
+div >>> .title-container a:focus {
   color: var(--text-dimmed);
 }
 

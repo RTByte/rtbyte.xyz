@@ -7,10 +7,15 @@
           <div class="sponsor-details">
             <div class="title-container">
               <h2 class="sponsor-title">Atlassian</h2>
-              <font-awesome-icon
-                :icon="['fad', 'hand-holding-heart']"
-                class="sponsor-title sponsor-icon"
-              />
+              <a
+                href="https://www.atlassian.com/software/statuspage"
+                target="_blank"
+              >
+                <font-awesome-icon
+                  :icon="['fad', 'hand-holding-heart']"
+                  class="sponsor-title sponsor-icon"
+                />
+              </a>
             </div>
             <span class="about-label sponsor-label">STATUSPAGE</span>
             <p>
@@ -39,10 +44,12 @@
           <div class="sponsor-details">
             <div class="title-container">
               <h2 class="sponsor-title">Crowdin</h2>
-              <font-awesome-icon
-                :icon="['fad', 'hand-holding-heart']"
-                class="sponsor-title sponsor-icon"
-              />
+              <a href="https://crowdin.com/" target="_blank">
+                <font-awesome-icon
+                  :icon="['fad', 'hand-holding-heart']"
+                  class="sponsor-title sponsor-icon"
+                />
+              </a>
             </div>
             <span class="about-label sponsor-label"
               >LOCALIZATION MANAGEMENT</span
@@ -67,10 +74,12 @@
           <div class="sponsor-details">
             <div class="title-container">
               <h2 class="sponsor-title">DigitalOcean</h2>
-              <font-awesome-icon
-                :icon="['fad', 'hand-holding-usd']"
-                class="sponsor-title sponsor-icon"
-              />
+              <a href="https://m.do.co/c/cb1c8103a3b0" target="_blank">
+                <font-awesome-icon
+                  :icon="['fad', 'hand-holding-usd']"
+                  class="sponsor-title sponsor-icon"
+                />
+              </a>
             </div>
             <span class="about-label sponsor-label">HOSTING PROVIDER</span>
             <p>
@@ -95,10 +104,12 @@
           <div class="sponsor-details">
             <div class="title-container">
               <h2 class="sponsor-title">Firebase</h2>
-              <font-awesome-icon
-                :icon="['fad', 'hand-holding-heart']"
-                class="sponsor-title sponsor-icon"
-              />
+              <a href="https://firebase.google.com" target="_blank">
+                <font-awesome-icon
+                  :icon="['fad', 'hand-holding-heart']"
+                  class="sponsor-title sponsor-icon"
+                />
+              </a>
             </div>
             <span class="about-label sponsor-label"
               >WEB APPLICATION PLATFORM</span
@@ -124,10 +135,12 @@
           <div class="sponsor-details">
             <div class="title-container">
               <h2 class="sponsor-title">Font Awesome</h2>
-              <font-awesome-icon
-                :icon="['fad', 'hand-holding-usd']"
-                class="sponsor-title sponsor-icon"
-              />
+              <a href="https://fontawesome.com/" target="_blank">
+                <font-awesome-icon
+                  :icon="['fad', 'hand-holding-usd']"
+                  class="sponsor-title sponsor-icon"
+                />
+              </a>
             </div>
             <span class="about-label sponsor-label">ICON SET & TOOLKIT</span>
             <p>
@@ -149,10 +162,12 @@
           <div class="sponsor-details">
             <div class="title-container">
               <h2 class="sponsor-title">Sentry</h2>
-              <font-awesome-icon
-                :icon="['fad', 'hand-holding-heart']"
-                class="sponsor-title sponsor-icon"
-              />
+              <a href="https://sentry.io/" target="_blank">
+                <font-awesome-icon
+                  :icon="['fad', 'hand-holding-heart']"
+                  class="sponsor-title sponsor-icon"
+                />
+              </a>
             </div>
             <span class="about-label sponsor-label"
               >ERROR MONITORING & TRACKING</span
