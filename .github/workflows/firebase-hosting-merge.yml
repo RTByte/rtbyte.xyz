@@ -4,6 +4,15 @@
 name: Deploy to Firebase Hosting on merge
 'on':
   push:
+    paths-ignore:
+      - '.github/**'
+      - '.all-contributorsrc'
+      - '.gitignore'
+      - '.npmrc'
+      - 'LICENSE'
+      - 'README.md'
+      - 'package.json'
+      - 'package-lock.json'
     branches:
       - master
 jobs:
