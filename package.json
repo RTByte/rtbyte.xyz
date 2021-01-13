@@ -16,7 +16,7 @@
     "@sentry/browser": "^5.29.2",
     "@sentry/integrations": "^5.29.2",
     "axios": "^0.21.0",
-    "core-js": "^3.6.5",
+    "core-js": "^3.8.2",
 
     "firebase": "^8.0.1",
     "vue": "^2.6.12",
