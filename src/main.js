@@ -1,7 +1,7 @@
 import Vue from "vue";
 import * as Sentry from "@sentry/browser";
 import { Vue as VueIntegration } from "@sentry/integrations";
-import * as firebase from "firebase/app";
+import firebase from "firebase/app";
 import "firebase/firestore";
 import "firebase/analytics";
 import App from "./App.vue";
@@ -19,7 +19,8 @@ import {
   faGithub,
   faTwitter,
   faInstagram,
-  faDev
+  faDev,
+  faLinkedin
 } from "@fortawesome/free-brands-svg-icons";
 import {
   faBars,
@@ -32,7 +33,6 @@ import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
 Sentry.init({
   dsn:
     "https://d2ba698820e1461597577178f7c19501@o435895.ingest.sentry.io/5396118",
-  release: "rtbyte-xyz@0.9.0",
   integrations: [new VueIntegration({ Vue, attachProps: true })]
 });
 
@@ -61,6 +61,7 @@ library.add(
   faTwitter,
   faInstagram,
   faDev,
+  faLinkedin,
   faExternalLink,
   faHandHoldingHeart,
   faHandHoldingUsd
@@ -74,5 +75,5 @@ Vue.config.productionTip = false;
 new Vue({
   router,
   store,
-  render: h => h(App)
+  render: (h) => h(App)
 }).$mount("#app");

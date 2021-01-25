@@ -11,9 +11,7 @@
             <router-link to="/about/core-team">
               Core team & shout-outs
             </router-link>
-            <router-link to="/about/sponsors">
-              Sponsors & usage
-            </router-link>
+            <router-link to="/about/sponsors">Sponsors & usage</router-link>
           </ul>
         </aside>
       </div>

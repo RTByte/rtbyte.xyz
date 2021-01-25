@@ -111,7 +111,7 @@ const router = new VueRouter({
   }
 });
 
-router.afterEach(to => {
+router.afterEach((to) => {
   if (to.meta && to.meta.title) {
     document.title = to.meta.title;
   }
