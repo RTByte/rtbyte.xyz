@@ -19,7 +19,8 @@ import {
   faGithub,
   faTwitter,
   faInstagram,
-  faDev
+  faDev,
+  faLinkedin
 } from "@fortawesome/free-brands-svg-icons";
 import {
   faBars,
@@ -61,6 +62,7 @@ library.add(
   faTwitter,
   faInstagram,
   faDev,
+  faLinkedin,
   faExternalLink,
   faHandHoldingHeart,
   faHandHoldingUsd

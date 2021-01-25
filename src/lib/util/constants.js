@@ -47,6 +47,37 @@ export const coreTeam = [
     ]
   },
   {
+    name: "Jared Knutti",
+    title: "DEVELOPER",
+    image: "/static/jaredknutti.jpg",
+    links: [
+      {
+        url: "mailto:jared@rtbyte.xyz",
+        icon: {
+          style: "fas",
+          icon: "envelope",
+          mask: true
+        }
+      },
+      {
+        url: "https://github.com/jtknutti",
+        icon: {
+          style: "fab",
+          icon: "github",
+          mask: true
+        }
+      },
+      {
+        url: "https://www.linkedin.com/in/jtknutti/",
+        icon: {
+          style: "fab",
+          icon: "linkedin",
+          mask: false
+        }
+      }
+    ]
+  },
+  {
     name: "Killian Higgins",
     title: "DEVELOPER",
     image: "/static/killianhiggins.jpg",
