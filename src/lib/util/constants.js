@@ -78,6 +78,29 @@ export const coreTeam = [
     ]
   },
   {
+    name: "Ines Rosito",
+    title: "DEVELOPER",
+    image: "/static/inesrosito.jpg",
+    links: [
+      {
+        url: "mailto:ines@rtbyte.xyz",
+        icon: {
+          style: "fas",
+          icon: "envelope",
+          mask: true
+        }
+      },
+      {
+        url: "https://github.com/PixelPoncho",
+        icon: {
+          style: "fab",
+          icon: "github",
+          mask: true
+        }
+      }
+    ]
+  },
+  {
     name: "Killian Higgins",
     title: "DEVELOPER",
     image: "/static/killianhiggins.jpg",
@@ -111,29 +134,6 @@ export const coreTeam = [
         icon: {
           style: "fab",
           icon: "instagram",
-          mask: true
-        }
-      }
-    ]
-  },
-  {
-    name: "Ines Rosito",
-    title: "DEVELOPER",
-    image: "/static/inesrosito.jpg",
-    links: [
-      {
-        url: "mailto:ines@rtbyte.xyz",
-        icon: {
-          style: "fas",
-          icon: "envelope",
-          mask: true
-        }
-      },
-      {
-        url: "https://github.com/PixelPoncho",
-        icon: {
-          style: "fab",
-          icon: "github",
           mask: true
         }
       }
