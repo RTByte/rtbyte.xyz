@@ -33,7 +33,6 @@ import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
 Sentry.init({
   dsn:
     "https://d2ba698820e1461597577178f7c19501@o435895.ingest.sentry.io/5396118",
-  release: "rtbyte-xyz@0.9.0",
   integrations: [new VueIntegration({ Vue, attachProps: true })]
 });
 
