@@ -1,7 +1,7 @@
 import Vue from "vue";
 import * as Sentry from "@sentry/browser";
 import { Vue as VueIntegration } from "@sentry/integrations";
-import * as firebase from "firebase/app";
+import firebase from "firebase/app";
 import "firebase/firestore";
 import "firebase/analytics";
 import App from "./App.vue";
@@ -76,5 +76,5 @@ Vue.config.productionTip = false;
 new Vue({
   router,
   store,
-  render: h => h(App)
+  render: (h) => h(App)
 }).$mount("#app");

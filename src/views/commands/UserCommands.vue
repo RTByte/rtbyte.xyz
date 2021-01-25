@@ -19,9 +19,7 @@
       </div>
       <div class="cmd-line">
         <p class="cmd-cmd">choice</p>
-        <p class="cmd-desc">
-          Makes a decision based off of the choices given.
-        </p>
+        <p class="cmd-desc">Makes a decision based off of the choices given.</p>
         <p class="cmd-usage">
           <code class="code-inline"
             >-choose &lt;option&gt;, &lt;option&gt;...</code
@@ -30,9 +28,7 @@
       </div>
       <div class="cmd-line">
         <p class="cmd-cmd">coinflip</p>
-        <p class="cmd-desc">
-          Flips a coin. 🙂 for heads, 🙃 for tails.
-        </p>
+        <p class="cmd-desc">Flips a coin. 🙂 for heads, 🙃 for tails.</p>
         <p class="cmd-usage">
           <code class="code-inline">-coinflip</code>
         </p>
@@ -119,9 +115,7 @@
       </div>
       <div class="cmd-line">
         <p class="cmd-cmd">prefix</p>
-        <p class="cmd-desc">
-          Returns the prefix(es) for the current server.
-        </p>
+        <p class="cmd-desc">Returns the prefix(es) for the current server.</p>
         <p class="cmd-usage">
           <code class="code-inline">-prefix</code>
         </p>

@@ -81,18 +81,14 @@
       </div>
       <div class="cmd-line">
         <p class="cmd-cmd">warn</p>
-        <p class="cmd-desc">
-          Warns a specified user and logs the reason.
-        </p>
+        <p class="cmd-desc">Warns a specified user and logs the reason.</p>
         <p class="cmd-usage">
           <code class="code-inline">-warn &lt;user&gt; [reason] [-s]</code>
         </p>
       </div>
       <div class="cmd-line">
         <p class="cmd-cmd">mute</p>
-        <p class="cmd-desc">
-          Mutes a specified user and logs the reason.
-        </p>
+        <p class="cmd-desc">Mutes a specified user and logs the reason.</p>
         <p class="cmd-usage">
           <code class="code-inline"
             >-mute &lt;user&gt; [when] [reason] [-s]</code
@@ -108,27 +104,21 @@
       </div>
       <div class="cmd-line">
         <p class="cmd-cmd">kick</p>
-        <p class="cmd-desc">
-          Kicks a specified user and logs the reason.
-        </p>
+        <p class="cmd-desc">Kicks a specified user and logs the reason.</p>
         <p class="cmd-usage">
           <code class="code-inline">-lyrics &lt;song&gt;</code>
         </p>
       </div>
       <div class="cmd-line">
         <p class="cmd-cmd">softban</p>
-        <p class="cmd-desc">
-          Softbans a specified user and logs the reason.
-        </p>
+        <p class="cmd-desc">Softbans a specified user and logs the reason.</p>
         <p class="cmd-usage">
           <code class="code-inline">-softban &lt;user&gt; [reason] [-s]</code>
         </p>
       </div>
       <div class="cmd-line">
         <p class="cmd-cmd">ban</p>
-        <p class="cmd-desc">
-          Bans a specified user and logs the reason.
-        </p>
+        <p class="cmd-desc">Bans a specified user and logs the reason.</p>
         <p class="cmd-usage">
           <code class="code-inline"
             >-ban &lt;user&gt; [when] [reason] [-s]</code
