@@ -17,7 +17,7 @@
     "@sentry/integrations": "^6.0.0",
     "axios": "^0.21.1",
     "core-js": "^3.8.3",
-    "firebase": "^8.2.3",
+    "firebase": "^8.2.4",
     "vue": "^2.6.12",
     "vue-axios": "^3.2.2",
     "vue-router": "^3.4.9",
