@@ -18,7 +18,7 @@
     "axios": "^0.21.2",
     "core-js": "^3.21.1",
     "firebase": "^9.6.10",
-    "vue": "^2.6.12",
+    "vue": "^2.6.14",
     "vue-axios": "^3.2.4",
     "vue-router": "^3.5.1",
     "vuex": "^3.6.2"
@@ -35,7 +35,7 @@
     "eslint-plugin-prettier": "^4.0.0",
     "eslint-plugin-vue": "^8.5.0",
     "prettier": "^2.6.1",
-    "vue-template-compiler": "^2.6.12"
+    "vue-template-compiler": "^2.6.14"
   },
   "eslintConfig": {
     "root": true,
